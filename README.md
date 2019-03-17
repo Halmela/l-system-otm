@@ -5,4 +5,4 @@
 
 [komentorivi.txt](https://github.com/Halmela/l-system-otm/blob/master/laskarit/komentorivi.txt)
 
-slowly mastering vim
+slowly learning vim
