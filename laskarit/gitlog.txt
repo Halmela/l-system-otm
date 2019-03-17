@@ -1,0 +1,49 @@
+commit 358099bdd7f0f0930507ff375d95ef99ef3c7252
+Author: Halmela Mikko O <homomikk@melkki.cs.helsinki.fi>
+Date:   Sun Mar 17 22:03:14 2019 +0200
+
+    hurraa jee wahuu bing bong
+
+ tiedostoja/file1 | 0
+ tiedostoja/file2 | 0
+ tiedostoja/file3 | 0
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+
+commit 8529a3723148fb028571697774e35ff165f43028
+Author: Halmela Mikko O <homomikk@melkki.cs.helsinki.fi>
+Date:   Sun Mar 17 21:59:42 2019 +0200
+
+    jee treenii mayne
+
+ studd/jokintiedosto.dll | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 224888bb3ebe917b7a00b851ad51f4c0f2b8c099
+Author: Halmela Mikko O <homomikk@melkki.cs.helsinki.fi>
+Date:   Sun Mar 17 21:58:08 2019 +0200
+
+    bojoing
+
+ kolmas.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit ffe833de388871db7f73ce7a78cc43f8996200db
+Author: Halmela Mikko O <homomikk@melkki.cs.helsinki.fi>
+Date:   Sun Mar 17 21:56:48 2019 +0200
+
+    toinen tiedosto git add .git add . ja edellisen muokkaus git add .git add .git add .
+
+ jeahjeah.txt | 1 +
+ toinen.txt   | 0
+ 2 files changed, 1 insertion(+)
+
+commit b7098ef9bf6ac668a96fd66a2d53837a465eaf14
+Author: Halmela Mikko O <homomikk@melkki.cs.helsinki.fi>
+Date:   Sun Mar 17 21:54:34 2019 +0200
+
+    jee nyt on tiedosto kansiossa hurraa jippii wahuu
+
+ jeahjeah.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+
