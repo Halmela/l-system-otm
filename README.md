@@ -7,4 +7,4 @@
 
 slowly learning vim
 ### Viikko 2
-Projektin [https://github.com/Halmela/l-system-otm/blob/master/dokumentointi/vaatimuusmaarittely.md](vaatimusmäärittely)
+Projektin [vaatimusmäärittely](https://github.com/Halmela/l-system-otm/blob/master/dokumentointi/vaatimuusmaarittely.md)
