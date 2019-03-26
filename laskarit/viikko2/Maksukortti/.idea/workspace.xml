@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="edcf1de5-ca58-4365-abc4-881a72c9033f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Maksukortti.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MaksukorttiTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="edcf1de5-ca58-4365-abc4-881a72c9033f" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,7 +14,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Maksukortti.java">
           <provider selected="true" editor-type-id="text-editor">
             <state>
@@ -33,11 +29,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/MaksukorttiTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="572">
-              <caret line="82" column="55" selection-start-line="82" selection-start-column="55" selection-end-line="82" selection-end-column="55" />
+            <state relative-caret-position="335">
+              <caret line="89" column="29" lean-forward="true" selection-start-line="89" selection-start-column="29" selection-end-line="89" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#350#351#0" expanded="true" />
@@ -106,7 +102,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553609525894" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553609685208" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="create.test.in.the.same.root" value="true" />
@@ -173,23 +169,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1553607665104</updated>
-      <workItem from="1553607667832" duration="1701000" />
+      <workItem from="1553607667832" duration="1955000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MaksukorttiTest - 2019.03.26 at 15h 50m 43s.xml">
-      <configuration name="MaksukorttiTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MaksukorttiTest - 2019.03.26 at 15h 50m 54s.xml">
-      <configuration name="MaksukorttiTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MaksukorttiTest - 2019.03.26 at 15h 51m 03s.xml">
-      <configuration name="MaksukorttiTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MaksukorttiTest - 2019.03.26 at 15h 51m 10s.xml">
-      <configuration name="MaksukorttiTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="MaksukorttiTest - 2019.03.26 at 15h 54m 33s.xml">
       <configuration name="MaksukorttiTest" configurationId="JUnit" />
     </history-entry>
@@ -208,9 +192,21 @@
     <history-entry file="MaksukorttiTest - 2019.03.26 at 16h 07m 26s.xml">
       <configuration name="MaksukorttiTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="MaksukorttiTest - 2019.03.26 at 16h 09m 32s.xml">
+      <configuration name="MaksukorttiTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MaksukorttiTest - 2019.03.26 at 16h 10m 27s.xml">
+      <configuration name="MaksukorttiTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MaksukorttiTest - 2019.03.26 at 16h 11m 21s.xml">
+      <configuration name="MaksukorttiTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MaksukorttiTest_maukkaanOstoOnnistuuTukiaEdeltavanaPaivana - 2019.03.26 at 16h 12m 08s.xml">
+      <configuration name="MaksukorttiTest.maukkaanOstoOnnistuuTukiaEdeltavanaPaivana" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1701000" />
+    <option name="totallyTimeSpent" value="1955000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-24" width="960" height="1104" extended-state="0" />
@@ -232,8 +228,8 @@
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32962587" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32962587" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.39939332" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -253,6 +249,18 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/MaksukorttiTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="335">
+          <caret line="89" column="29" lean-forward="true" selection-start-line="89" selection-start-column="29" selection-end-line="89" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#350#351#0" expanded="true" />
+            <element signature="e#429#430#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Maksukortti.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -262,18 +270,6 @@
             <element signature="e#216#217#0" expanded="true" />
             <element signature="e#722#723#0" expanded="true" />
             <element signature="e#788#789#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MaksukorttiTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="572">
-          <caret line="82" column="55" selection-start-line="82" selection-start-column="55" selection-end-line="82" selection-end-column="55" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#350#351#0" expanded="true" />
-            <element signature="e#429#430#0" expanded="true" />
           </folding>
         </state>
       </provider>
