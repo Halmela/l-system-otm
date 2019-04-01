@@ -9,7 +9,7 @@ public class LSystem {
     private ArrayList<String> alphabet;
 
 
-    public LSystem(String axiom, HashMap productionRules) {
+    public LSystem(String axiom, HashMap<String, String> productionRules) {
         this.axiom = axiom;
         this.productionRules = productionRules;
         this.alphabet = alphabetFromProductionRules();
