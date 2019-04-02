@@ -70,10 +70,17 @@ public class StringCreator {
 
     @Override
     public String toString() {
-        return "StringCreator{" +
-                "axiom='" + axiom + '\'' +
-                ", productionRules=" + productionRules +
-                ", alphabet=" + alphabet +
-                '}';
+        StringBuilder output = new StringBuilder();
+        output.append("\nAxiom: " + axiom +"\n");
+        output.append("Alphabet: ");
+        alphabet.forEach(a -> output.append(a +", "));
+        output.deleteCharAt(output.length()-2);
+        output.append("\nRules of production: \n");
+
+        for (String rule : productionRules.keySet()) {
+            output.append("\t" + rule + " -> " + productionRules.get(rule) + "\n");
+        }
+
+        return output.toString();
     }
 }
