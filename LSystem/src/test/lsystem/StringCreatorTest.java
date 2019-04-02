@@ -32,4 +32,16 @@ public class StringCreatorTest {
         assertEquals(lsys.getAlphabet(), expected);
     }
 
+
+    @Test
+    public void rulesAreAppliedCorrectly() {
+        assertEquals(lsys.ruleApplier(lsys.getAxiom()), "1[0]0");
+    }
+
+    @Test
+    public void iteratorWorksCorrectly() {
+        String string = lsys.iterator(2);
+        assertEquals(string, "11[1[0]0]1[0]0");
+    }
+
 }

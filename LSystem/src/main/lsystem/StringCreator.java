@@ -30,6 +30,32 @@ public class StringCreator {
     }
 
 
+    public String ruleApplier(String word) {
+        StringBuilder current = new StringBuilder();
+
+        for (String s : word.split("")) {
+            if (productionRules.keySet().contains(s)) {
+                current.append(productionRules.get(s));
+            } else
+                current.append(s);
+        }
+
+        return current.toString();
+    }
+
+
+    public String iterator(int i) {
+        String axiom = this.axiom;
+
+        for (int j = 0; j < i; j++) {
+            axiom = ruleApplier(axiom);
+        }
+
+        return axiom;
+    }
+
+
+
     public String getAxiom() {
         return axiom;
     }
