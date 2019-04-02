@@ -17,3 +17,4 @@
 | :----:|:-----------| :--------:|
 | 2.4   | 30         | Maven ruotuun|
 |       | 40         | testejä ja toiminnallisuutta|
+|	| 50	     | Main ja printit kuntoon, Jyrki Sukula!|
