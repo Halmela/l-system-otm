@@ -10,8 +10,11 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 
-class LSystemTest {
+
+public class LSystemTest {
+
     LSystem ls;
+
 
     @Before
     public void setUp() {
@@ -22,6 +25,7 @@ class LSystemTest {
 
         LSystem ls = new LSystem(axiom, productionRules);
     }
+
 
     @Test
     public void alphabetIsExtractedCorrectly() {
