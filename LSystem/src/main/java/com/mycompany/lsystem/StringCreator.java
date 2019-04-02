@@ -3,13 +3,13 @@ package com.mycompany.lsystem;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-public class LSystem {
+public class StringCreator {
     private String axiom;
     private HashMap<String, String> productionRules;
     private ArrayList<String> alphabet;
 
 
-    public LSystem(String axiom, HashMap<String, String> productionRules) {
+    public StringCreator(String axiom, HashMap<String, String> productionRules) {
         this.axiom = axiom;
         this.productionRules = productionRules;
         this.alphabet = alphabetFromProductionRules();
@@ -44,7 +44,7 @@ public class LSystem {
 
     @Override
     public String toString() {
-        return "LSystem{" +
+        return "StringCreator{" +
                 "axiom='" + axiom + '\'' +
                 ", productionRules=" + productionRules +
                 ", alphabet=" + alphabet +

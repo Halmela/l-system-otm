@@ -11,7 +11,7 @@ public class Main {
         productionRules.put("0", "1[0]0");
         productionRules.put("1", "11");
 
-        LSystem lsys = new LSystem(axiom, productionRules);
+        StringCreator lsys = new StringCreator(axiom, productionRules);
 
         System.out.println(lsys);
     }

@@ -11,9 +11,9 @@ import java.util.HashMap;
 import java.util.List;
 
 
-public class LSystemTest {
+public class StringCreatorTest {
 
-    LSystem lsys;
+    StringCreator lsys;
 
     @Before
     public void setUp() {
@@ -22,7 +22,7 @@ public class LSystemTest {
         productionRules.put("0", "1[0]0");
         productionRules.put("1", "11");
 
-        lsys = new LSystem(axiom, productionRules);
+        lsys = new StringCreator(axiom, productionRules);
     }
 
 

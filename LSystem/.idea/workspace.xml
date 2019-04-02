@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="60fc48ba-c00f-4b13-981c-57af3de7d973" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/lsystem/LSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/lsystem/LSystem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/lsystem/LSystemTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/lsystem/LSystemTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/lsystem/LSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/lsystem/StringCreator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/lsystem/LSystemTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/lsystem/StringCreatorTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/lsystem/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/lsystem/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
@@ -31,10 +31,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mycompany/lsystem/LSystem.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mycompany/lsystem/StringCreator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="235">
-              <caret line="45" column="18" selection-start-line="45" selection-start-column="18" selection-end-line="45" selection-end-column="18" />
+            <state relative-caret-position="-88">
+              <caret line="5" column="26" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#823#824#0" expanded="true" />
@@ -49,10 +49,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mycompany/lsystem/LSystemTest.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mycompany/lsystem/StringCreatorTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="327">
-              <caret line="29" column="45" selection-start-line="29" selection-start-column="45" selection-end-line="29" selection-end-column="45" />
+            <state relative-caret-position="308">
+              <caret line="14" selection-start-line="14" selection-end-line="14" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -81,9 +81,10 @@
         <option value="$PROJECT_DIR$/src/main/java/com/mycompany/lsystem/Stringer.java" />
         <option value="$PROJECT_DIR$/test/LSystemTest.java" />
         <option value="$PROJECT_DIR$/src/test/LSystemTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mycompany/lsystem/LSystem.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mycompany/lsystem/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mycompany/lsystem/LSystemTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mycompany/lsystem/LSystem.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mycompany/lsystem/StringCreator.java" />
       </list>
     </option>
   </component>
@@ -168,8 +169,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.LSystemTest">
-    <configuration name="LSystemTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.LSystem">
+    <configuration name="StringCreatorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LSystem" />
       <extension name="coverage">
         <pattern>
@@ -178,13 +179,13 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.mycompany.lsystem" />
-      <option name="MAIN_CLASS_NAME" value="com.mycompany.lsystem.LSystemTest" />
+      <option name="MAIN_CLASS_NAME" value="com.mycompany.lsystem.StringCreatorTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LSystemTest.alphabetIsExtractedCorrectly" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="StringCreatorTest.alphabetIsExtractedCorrectly" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LSystem" />
       <extension name="coverage">
         <pattern>
@@ -193,7 +194,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.mycompany.lsystem" />
-      <option name="MAIN_CLASS_NAME" value="com.mycompany.lsystem.LSystemTest" />
+      <option name="MAIN_CLASS_NAME" value="com.mycompany.lsystem.StringCreatorTest" />
       <option name="METHOD_NAME" value="alphabetIsExtractedCorrectly" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -202,8 +203,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.LSystemTest" />
-        <item itemvalue="JUnit.LSystemTest.alphabetIsExtractedCorrectly" />
+        <item itemvalue="JUnit.StringCreatorTest" />
+        <item itemvalue="JUnit.StringCreatorTest.alphabetIsExtractedCorrectly" />
       </list>
     </recent_temporary>
   </component>
@@ -217,7 +218,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1554150369182</updated>
-      <workItem from="1554150372277" duration="9062000" />
+      <workItem from="1554150372277" duration="9316000" />
     </task>
     <servers />
   </component>
@@ -243,13 +244,15 @@
     <history-entry file="LSystemTest - 2019.04.02 at 17h 08m 30s.xml">
       <configuration name="LSystemTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="LSystemTest - 2019.04.02 at 17h 15m 49s.xml">
+      <configuration name="LSystemTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9062000" />
+    <option name="totallyTimeSpent" value="9316000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1061" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Designer" />
       <window_info id="Image Layers" />
@@ -267,9 +270,9 @@
       <window_info anchor="bottom" id="Database Changes" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32980973" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32980973" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.39957717" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39957717" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -324,51 +327,51 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/mycompany/lsystem/LSystemTest.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/com/mycompany/lsystem/StringCreatorTest.java</url>
           <line>30</line>
           <properties />
           <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/mycompany/lsystem/LSystemTest.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/com/mycompany/lsystem/StringCreatorTest.java</url>
           <line>31</line>
           <properties />
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/mycompany/lsystem/LSystemTest.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/com/mycompany/lsystem/StringCreatorTest.java</url>
           <line>20</line>
           <properties />
           <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/mycompany/lsystem/LSystemTest.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/com/mycompany/lsystem/StringCreatorTest.java</url>
           <line>19</line>
           <properties />
           <option name="timeStamp" value="12" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/mycompany/lsystem/LSystemTest.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/com/mycompany/lsystem/StringCreatorTest.java</url>
           <line>21</line>
           <properties />
           <option name="timeStamp" value="13" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/mycompany/lsystem/LSystemTest.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/com/mycompany/lsystem/StringCreatorTest.java</url>
           <line>22</line>
           <properties />
           <option name="timeStamp" value="14" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/mycompany/lsystem/LSystemTest.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/com/mycompany/lsystem/StringCreatorTest.java</url>
           <line>24</line>
           <properties />
           <option name="timeStamp" value="15" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/com/mycompany/lsystem/LSystemTest.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/com/mycompany/lsystem/StringCreatorTest.java</url>
           <line>18</line>
-          <properties class="com.mycompany.lsystem.LSystemTest" method="setUp">
+          <properties class="com.mycompany.lsystem.StringCreatorTest" method="setUp">
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="9" />
@@ -390,10 +393,17 @@
     <entry file="file://$PROJECT_DIR$/src/test/LSystemTest.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mycompany/lsystem/LSystem.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mycompany/lsystem/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="45" column="18" selection-start-line="45" selection-start-column="18" selection-end-line="45" selection-end-column="18" />
+        <state relative-caret-position="330">
+          <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mycompany/lsystem/StringCreator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-88">
+          <caret line="5" column="26" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#823#824#0" expanded="true" />
@@ -406,17 +416,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mycompany/lsystem/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mycompany/lsystem/StringCreatorTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mycompany/lsystem/LSystemTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="29" column="45" selection-start-line="29" selection-start-column="45" selection-end-line="29" selection-end-column="45" />
+        <state relative-caret-position="308">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
