@@ -38,10 +38,21 @@ public class StringCreatorTest {
         assertEquals(lsys.ruleApplier(lsys.getAxiom()), "1[0]0");
     }
 
+
     @Test
     public void iteratorWorksCorrectly() {
         String string = lsys.iterator(2);
         assertEquals(string, "11[1[0]0]1[0]0");
+    }
+
+    @Test
+    public void anotherIteratorTest() {
+        String axiom = "F";
+        HashMap<String, String> productionRules = new HashMap<>();
+        productionRules.put("F", "F+F-F-F+F");
+        StringCreator ls = new StringCreator(axiom, productionRules);
+
+        assertEquals(ls.iterator(2), "F+F-F-F+F+F+F-F-F+F-F+F-F-F+F-F+F-F-F+F+F+F-F-F+F");
     }
 
 }
