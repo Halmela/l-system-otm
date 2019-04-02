@@ -1,4 +1,4 @@
-package com.mycompany.lsystem;
+package lsystem;
 
 import java.util.ArrayList;
 import java.util.HashMap;

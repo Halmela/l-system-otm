@@ -1,4 +1,4 @@
-package com.mycompany.lsystem;
+package lsystem;
 
 
 import org.junit.Before;
