@@ -15,7 +15,6 @@ public class LSystemTest {
 
     LSystem ls;
 
-
     @Before
     public void setUp() {
         String axiom = "0";
