@@ -13,7 +13,7 @@ import java.util.List;
 
 public class LSystemTest {
 
-    LSystem ls;
+    LSystem lsys;
 
     @Before
     public void setUp() {
@@ -22,14 +22,14 @@ public class LSystemTest {
         productionRules.put("0", "1[0]0");
         productionRules.put("1", "11");
 
-        LSystem ls = new LSystem(axiom, productionRules);
+        lsys = new LSystem(axiom, productionRules);
     }
 
 
     @Test
-    public void alphabetIsExtractedCorrectly() {
+    public void LSystemIsConstructedCorrectly() {
         List<String> expected = new ArrayList<>(Arrays.asList("1", "[", "0", "]"));
-        assertEquals(ls.getAlphabet(), expected);
+        assertEquals(lsys.getAlphabet(), expected);
     }
 
 }

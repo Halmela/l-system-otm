@@ -41,4 +41,13 @@ public class LSystem {
     public ArrayList<String> getAlphabet() {
         return alphabet;
     }
+
+    @Override
+    public String toString() {
+        return "LSystem{" +
+                "axiom='" + axiom + '\'' +
+                ", productionRules=" + productionRules +
+                ", alphabet=" + alphabet +
+                '}';
+    }
 }
