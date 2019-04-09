@@ -1,6 +1,12 @@
+/*
+ * Core of L-system
+ * Applies production rules to each letter of axiom as many times as wanted
+ */
+
 package lsystem;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 
 public class StringCreator {
@@ -53,6 +59,9 @@ public class StringCreator {
 
         return axiom;
     }
+
+
+
 
 
 
