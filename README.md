@@ -1,10 +1,10 @@
-# Ohjelmistotekniikan harjoitustyö
-## Tehtävät
-### Viikko 1
-[gitlog.txt](https://github.com/Halmela/l-system-otm/blob/master/laskarit/gitlog.txt)
+# Puutuotin
 
-[komentorivi.txt](https://github.com/Halmela/l-system-otm/blob/master/laskarit/komentorivi.txt)
+Puutuotin on itseään toistavien kuvioiden, kuten puiden luomiseen käytettävä ohjelma, joka käyttää hyväkseen L-systeemiä. Tällä hetkellä puutuotin luo vain merkkijonoesityksen kuviosta.
 
-slowly learning vim
-### Viikko 2
-Projektin [vaatimusmäärittely](https://github.com/Halmela/l-system-otm/blob/master/dokumentointi/vaatimuusmaarittely.md)
+Sovellus on osa Helsingin yliopiston Tietojenkäsittelytieteen Ohjelmistotekniikka-kurssia.
+
+## Dokumentaatio
+[Vaatimusmäärittely](https://github.com/Halmela/l-system-otm/blob/master/dokumentointi/vaatimuusmaarittely.md)
+
+[Työaikakirjanpito](https://github.com/Halmela/l-system-otm/blob/master/dokumentointi/ajank%C3%A4ytt%C3%B6.md)
