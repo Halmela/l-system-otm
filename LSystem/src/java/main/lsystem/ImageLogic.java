@@ -41,6 +41,15 @@ public class ImageLogic {
         return rules;
     }
 
+
+	public ArrayDeque<Vector> stackCreator(String word) {
+			
+		ArrayDeque<Vector> stack = new ArrayDeque<>();
+		for (String s : word.split("") {
+			
+		}
+	}
+
     public HashMap<String, String> getDrawingRules() {
         return drawingRules;
     }
