@@ -9,6 +9,8 @@ import java.util.HashMap;
 
 import static org.junit.Assert.*;
 
+/*
+
 public class ImageLogicTest {
     StringCreator lsys;
     ImageLogic iL;
@@ -24,14 +26,7 @@ public class ImageLogicTest {
         iL = new ImageLogic(lsys);
     }
 
-    @Test
-    public void rulesAreExtractedCorrectly() {
-        HashMap<String, String> testi = new HashMap<>();
-        testi.put("1", "forward");
-        testi.put("[", "push left");
-        testi.put("0","forward end");
-        testi.put("]", "pop right");
-        assertEquals(testi, iL.getDrawingRules());
-    }
 
-}
+
+}*/
+

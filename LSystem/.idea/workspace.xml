@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="60fc48ba-c00f-4b13-981c-57af3de7d973" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/java/test/lsystem/ImageLogicTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/java/main/lsystem/Overlord.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/java/test/lsystem/OverlordTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/java/main/lsystem/ImageLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/main/lsystem/ImageLogic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/main/lsystem/StringCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/main/lsystem/StringCreator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/test/lsystem/ImageLogicTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/test/lsystem/ImageLogicTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -35,20 +36,53 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/java/main/lsystem/StringCreator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
+            <state relative-caret-position="-44">
               <caret line="7" column="27" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/java/main/lsystem/ImageLogic.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
+            <state relative-caret-position="638">
+              <caret line="29" column="5" lean-forward="true" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/java/main/lsystem/Overlord.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="389">
+              <caret line="63" column="45" selection-start-line="63" selection-start-column="45" selection-end-line="63" selection-end-column="45" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1389#1390#0" expanded="true" />
+                <element signature="e#1417#1418#0" expanded="true" />
+                <element signature="e#1471#1472#0" expanded="true" />
+                <element signature="e#1502#1503#0" expanded="true" />
+                <element signature="e#1534#1535#0" expanded="true" />
+                <element signature="e#1562#1563#0" expanded="true" />
+                <element signature="e#1637#1638#0" expanded="true" />
+                <element signature="e#1678#1679#0" expanded="true" />
+                <element signature="e#1711#1712#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/java/test/lsystem/OverlordTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="378">
+              <caret line="39" selection-start-line="39" selection-end-line="39" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -59,8 +93,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/java/test/lsystem/ImageLogicTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="660">
-              <caret line="30" column="19" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
+            <state relative-caret-position="198">
+              <caret line="11" column="2" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="2" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -71,8 +105,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/java/test/lsystem/StringCreatorTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="550">
-              <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+            <state relative-caret-position="60">
+              <caret line="15" column="23" lean-forward="true" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#805#806#0" expanded="true" />
@@ -125,8 +159,10 @@
         <option value="$PROJECT_DIR$/src/main/lsystem/Vector.java" />
         <option value="$PROJECT_DIR$/src/main/lsystem/StringCreator.java" />
         <option value="$PROJECT_DIR$/src/java/main/lsystem/StringCreator.java" />
-        <option value="$PROJECT_DIR$/src/java/main/lsystem/ImageLogic.java" />
         <option value="$PROJECT_DIR$/src/java/test/lsystem/ImageLogicTest.java" />
+        <option value="$PROJECT_DIR$/src/java/main/lsystem/Overlord.java" />
+        <option value="$PROJECT_DIR$/src/java/test/lsystem/OverlordTest.java" />
+        <option value="$PROJECT_DIR$/src/java/main/lsystem/ImageLogic.java" />
       </list>
     </option>
   </component>
@@ -138,9 +174,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="960" />
-    <option name="width" value="960" />
-    <option name="height" value="1080" />
+    <option name="width" value="1920" />
+    <option name="height" value="1061" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -150,8 +185,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -204,6 +237,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -254,8 +289,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ImageLogicTest.rulesAreExtractedCorrectly">
-    <configuration name="ImageLogicTest.rulesAreExtractedCorrectly" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.OverlordTest.drawingRulesAreExtractedCorrectly">
+    <configuration name="OverlordTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LSystem" />
       <extension name="coverage">
         <pattern>
@@ -264,8 +299,39 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="lsystem" />
-      <option name="MAIN_CLASS_NAME" value="lsystem.ImageLogicTest" />
-      <option name="METHOD_NAME" value="rulesAreExtractedCorrectly" />
+      <option name="MAIN_CLASS_NAME" value="lsystem.OverlordTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OverlordTest.drawingRulesAreExtractedCorrectly" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="LSystem" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lsystem.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="lsystem" />
+      <option name="MAIN_CLASS_NAME" value="lsystem.OverlordTest" />
+      <option name="METHOD_NAME" value="drawingRulesAreExtractedCorrectly" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OverlordTest.productionRulesAreExtractedCorrectly" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="LSystem" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lsystem.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="lsystem" />
+      <option name="MAIN_CLASS_NAME" value="lsystem.OverlordTest" />
+      <option name="METHOD_NAME" value="productionRulesAreExtractedCorrectly" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -286,22 +352,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StringCreatorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="LSystem" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.mycompany.lsystem.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.mycompany.lsystem" />
-      <option name="MAIN_CLASS_NAME" value="com.mycompany.lsystem.StringCreatorTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="StringCreatorTest.anotherIteratorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="StringCreatorTest.LSystemIsConstructedCorrectly" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LSystem" />
       <extension name="coverage">
         <pattern>
@@ -311,23 +362,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="lsystem" />
       <option name="MAIN_CLASS_NAME" value="lsystem.StringCreatorTest" />
-      <option name="METHOD_NAME" value="anotherIteratorTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="StringCreatorTest.iteratorWorksCorrectly" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="LSystem" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="lsystem.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="lsystem" />
-      <option name="MAIN_CLASS_NAME" value="lsystem.StringCreatorTest" />
-      <option name="METHOD_NAME" value="iteratorWorksCorrectly" />
+      <option name="METHOD_NAME" value="LSystemIsConstructedCorrectly" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -335,11 +370,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ImageLogicTest.rulesAreExtractedCorrectly" />
+        <item itemvalue="JUnit.OverlordTest.drawingRulesAreExtractedCorrectly" />
         <item itemvalue="JUnit.StringCreatorTest (1)" />
-        <item itemvalue="JUnit.StringCreatorTest.anotherIteratorTest" />
-        <item itemvalue="JUnit.StringCreatorTest" />
-        <item itemvalue="JUnit.StringCreatorTest.iteratorWorksCorrectly" />
+        <item itemvalue="JUnit.OverlordTest.productionRulesAreExtractedCorrectly" />
+        <item itemvalue="JUnit.OverlordTest" />
+        <item itemvalue="JUnit.StringCreatorTest.LSystemIsConstructedCorrectly" />
       </list>
     </recent_temporary>
   </component>
@@ -358,43 +393,45 @@
       <workItem from="1554224276342" duration="9333000" />
       <workItem from="1554726272010" duration="2950000" />
       <workItem from="1554807598807" duration="5793000" />
+      <workItem from="1555316107410" duration="645000" />
+      <workItem from="1555416362024" duration="5037000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="StringCreatorTest_rulesAreAppliedCorrectly - 2019.04.02 at 20h 13m 32s.xml">
-      <configuration name="StringCreatorTest.rulesAreAppliedCorrectly" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="StringCreatorTest_iteratorWorksCorrectly - 2019.04.02 at 20h 24m 16s.xml">
-      <configuration name="StringCreatorTest.iteratorWorksCorrectly" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="StringCreatorTest_iteratorWorksCorrectly - 2019.04.02 at 20h 24m 53s.xml">
-      <configuration name="StringCreatorTest.iteratorWorksCorrectly" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="StringCreatorTest_anotherIteratorTest - 2019.04.02 at 20h 40m 34s.xml">
-      <configuration name="StringCreatorTest.anotherIteratorTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="StringCreatorTest - 2019.04.02 at 21h 00m 13s.xml">
-      <configuration name="StringCreatorTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="StringCreatorTest - 2019.04.02 at 21h 01m 24s.xml">
-      <configuration name="StringCreatorTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="StringCreatorTest_anotherIteratorTest - 2019.04.02 at 21h 01m 32s.xml">
-      <configuration name="StringCreatorTest.anotherIteratorTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="StringCreatorTest_anotherIteratorTest - 2019.04.02 at 22h 18m 51s.xml">
-      <configuration name="StringCreatorTest.anotherIteratorTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="StringCreatorTest_(1) - 2019.04.02 at 22h 19m 15s.xml">
+    <history-entry file="StringCreatorTest_(1) - 2019.04.16 at 15h 57m 27s.xml">
       <configuration name="StringCreatorTest (1)" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StringCreatorTest_(1) - 2019.04.02 at 22h 19m 23s.xml">
-      <configuration name="StringCreatorTest (1)" configurationId="JUnit" />
+    <history-entry file="OverlordTest_drawingRulesAreExtractedCorrectly - 2019.04.16 at 16h 01m 05s.xml">
+      <configuration name="OverlordTest.drawingRulesAreExtractedCorrectly" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="OverlordTest_drawingRulesAreExtractedCorrectly - 2019.04.16 at 16h 01m 19s.xml">
+      <configuration name="OverlordTest.drawingRulesAreExtractedCorrectly" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="OverlordTest_drawingRulesAreExtractedCorrectly - 2019.04.16 at 16h 08m 22s.xml">
+      <configuration name="OverlordTest.drawingRulesAreExtractedCorrectly" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="OverlordTest_drawingRulesAreExtractedCorrectly - 2019.04.16 at 16h 08m 39s.xml">
+      <configuration name="OverlordTest.drawingRulesAreExtractedCorrectly" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="OverlordTest_drawingRulesAreExtractedCorrectly - 2019.04.16 at 16h 09m 14s.xml">
+      <configuration name="OverlordTest.drawingRulesAreExtractedCorrectly" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="OverlordTest_drawingRulesAreExtractedCorrectly - 2019.04.16 at 16h 09m 47s.xml">
+      <configuration name="OverlordTest.drawingRulesAreExtractedCorrectly" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="OverlordTest_drawingRulesAreExtractedCorrectly - 2019.04.16 at 16h 10m 01s.xml">
+      <configuration name="OverlordTest.drawingRulesAreExtractedCorrectly" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="OverlordTest_drawingRulesAreExtractedCorrectly - 2019.04.16 at 16h 12m 54s.xml">
+      <configuration name="OverlordTest.drawingRulesAreExtractedCorrectly" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="OverlordTest_drawingRulesAreExtractedCorrectly - 2019.04.16 at 16h 13m 42s.xml">
+      <configuration name="OverlordTest.drawingRulesAreExtractedCorrectly" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31174000" />
+    <option name="totallyTimeSpent" value="36856000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -406,10 +443,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="960" y="0" width="960" height="1080" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="0" width="1920" height="1061" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.09150327" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.11075612" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -418,7 +454,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32980973" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.36476684" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.24207188" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39957717" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -428,7 +464,7 @@
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Inspection Results" order="10" weight="0.32980973" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50108933" side_tool="true" weight="0.32953367" />
-      <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.49891067" weight="0.32953367" />
+      <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.49891067" weight="0.32875264" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
       <window_info anchor="bottom" id="Version Control" order="14" sideWeight="0.49891067" weight="0.32953367" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -500,13 +536,6 @@
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/java/main/lsystem/Vector.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="1" column="48" selection-start-line="1" selection-start-column="48" selection-end-line="1" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/java/test/lsystem/MainTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
@@ -524,10 +553,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/java/main/lsystem/Vector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" column="48" selection-start-line="1" selection-start-column="48" selection-end-line="1" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/java/main/lsystem/StringCreator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-44">
+          <caret line="7" column="27" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/java/test/lsystem/StringCreatorTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+        <state relative-caret-position="60">
+          <caret line="15" column="23" lean-forward="true" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#805#806#0" expanded="true" />
@@ -536,30 +579,52 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/java/main/lsystem/ImageLogic.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/java/test/lsystem/ImageLogicTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="30" column="19" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
+        <state relative-caret-position="198">
+          <caret line="11" column="2" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="2" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/java/main/lsystem/StringCreator.java">
+    <entry file="file://$PROJECT_DIR$/src/java/main/lsystem/Overlord.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="7" column="27" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
+        <state relative-caret-position="389">
+          <caret line="63" column="45" selection-start-line="63" selection-start-column="45" selection-end-line="63" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1389#1390#0" expanded="true" />
+            <element signature="e#1417#1418#0" expanded="true" />
+            <element signature="e#1471#1472#0" expanded="true" />
+            <element signature="e#1502#1503#0" expanded="true" />
+            <element signature="e#1534#1535#0" expanded="true" />
+            <element signature="e#1562#1563#0" expanded="true" />
+            <element signature="e#1637#1638#0" expanded="true" />
+            <element signature="e#1678#1679#0" expanded="true" />
+            <element signature="e#1711#1712#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/java/test/lsystem/OverlordTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/java/main/lsystem/ImageLogic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="638">
+          <caret line="29" column="5" lean-forward="true" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
