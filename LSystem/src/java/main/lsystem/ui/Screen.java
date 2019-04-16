@@ -47,8 +47,18 @@ public class Screen extends Application{
         String[] o = new String[2];
         o[0] = "11";
         o[1] = "forward";
+        String[] f = new String[3];
+        f[0] = "[";
+        f[1] = "push";
+        f[2] = "left";
+        String[] d = new String[3];
+        d[0] = "]";
+        d[1] = "pop";
+        d[2] = "right";
         allRules.put("0", z);
         allRules.put("1", o);
+        allRules.put("[", f);
+        allRules.put("]", d);
 
         int h = 1000;
         int w = 1000;
