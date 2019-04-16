@@ -17,3 +17,8 @@
 |       | 40         | testejä ja toiminnallisuutta|
 |	| 50	     | Main ja printit kuntoon, Jyrki Sukula!|
 |	| 10	     | Repon söpöstys|
+| 15.4  | 40?	     | Vähän läpsyttelyä ja ideointia|
+| 16.4  | 60         | Hauskaa ja kivaa, toimintaa lisää|
+|       | 120 	     | Helvetin porttien avaamista ja sulkemista|
+
+Yhteensä 445 min, eli vajaa 7,5 h.

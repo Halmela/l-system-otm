@@ -22,11 +22,12 @@ public class ImageLogic {
 	public ArrayList<String> listFromWord(String word) {
         ArrayList<String> list = new ArrayList<>();
 
+        System.out.println(word);
         for (String s : word.split("")) {
-
             String[] rules = drawingRules.get(s);
             for (int i = 0; i < rules.length; i++) {
                 list.add(rules[i]);
+                System.out.println(rules[i]);
             }
         }
 
@@ -45,6 +46,7 @@ public class ImageLogic {
         int length = 5;
 
         for (String action : listFromWord(word)) {
+            System.out.println(action);
             Vector vec = new Vector(x, y, angle, length);
 
             if (action.equals("forward")) {
