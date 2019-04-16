@@ -1,5 +1,7 @@
 package lsystem;
 
+import lsystem.ui.Screen;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 
@@ -9,17 +11,16 @@ public class Overlord {
 
     private String axiom;
     private HashMap<String, String[]> allRules;
-    private double angle;
+    private int iterations;
 
 
-
-    public Overlord(String start, HashMap<String, String[]> rules, int angleDegrees) {
+    public Overlord(String start, HashMap<String, String[]> rules, int iter, Vector vc) {
         axiom = start;
         allRules = rules;
-        angle = Math.toRadians(angleDegrees);
+        iterations = iter;
 
         stringCreator = new StringCreator(axiom, extractProductionRules(allRules));
-        imageLogic = new ImageLogic(extractDrawingRules(allRules));
+        imageLogic = new ImageLogic(extractDrawingRules(allRules), stringCreator.iterator(iter), vc);
     }
 
 
@@ -49,6 +50,7 @@ public class Overlord {
     }
 
 
+
     public String getAxiom() {
         return axiom;
     }
@@ -57,9 +59,6 @@ public class Overlord {
         return allRules;
     }
 
-    public double getAngle() {
-        return angle;
-    }
 
     public StringCreator getStringCreator() {
         return stringCreator;

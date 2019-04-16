@@ -1,5 +1,6 @@
 package lsystem;
 
+import lsystem.ui.Screen;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -24,7 +25,14 @@ public class OverlordTest {
         allRules.put("0", z);
         allRules.put("1", o);
 
-        overlord = new Overlord("0", allRules, 60);
+
+        int height = 1000;
+        int width = 1000;
+        double angle = 60;
+
+        Vector vec = new Vector(width / 2, height, Math.toRadians(angle), 0);
+
+        overlord = new Overlord("0", allRules, 3, vec);
     }
 
     @Test

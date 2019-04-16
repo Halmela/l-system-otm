@@ -5,23 +5,23 @@
 package lsystem;
 
 public class Vector {
-    private int startX;
-    private int startY;
+    private double startX;
+    private double startY;
     private double angle;
     private int length;
 
-    public Vector(int startX, int startY, double angle, int length) {
+    public Vector(double startX, double startY, double angle, int length) {
         this.startX = startX;
         this.startY = startY;
         this.angle = angle;
         this.length = length;
     }
 
-    public int getStartX() {
+    public double getStartX() {
         return startX;
     }
 
-    public int getStartY() {
+    public double getStartY() {
         return startY;
     }
 
@@ -31,5 +31,13 @@ public class Vector {
 
     public int getLength() {
         return length;
+    }
+
+    public double getEndX() {
+        return startX + Math.cos(angle) * length;
+    }
+
+    public double getEndY() {
+        return startY + Math.sin(angle) * length;
     }
 }
