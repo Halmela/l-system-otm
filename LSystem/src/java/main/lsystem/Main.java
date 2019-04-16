@@ -26,7 +26,7 @@ public class Main {
             System.out.println("Iteration "+ j +": \t"+lsys.iterator(j));
         }*/
 
-        HashMap<String, String[]> allRules = new HashMap<>();
+        /*HashMap<String, String[]> allRules = new HashMap<>();
 
         String[] z = new String[3];
         z[0] = "1[0]0";
@@ -44,8 +44,8 @@ public class Main {
 
         Vector vec = new Vector(width / 2, height, Math.toRadians(angle), 0);
 
-        Overlord overi = new Overlord("0", allRules, 2, vec);
-        Screen naytto = new Screen(1000, 1000, overi);
+        Overlord overi = new Overlord("0", allRules, 2, vec);*/
+        Screen naytto = new Screen();
 
 
     }

@@ -25,8 +25,8 @@ public class ImageLogicTest {
         lsys = new StringCreator(axiom, productionRules);
         iL = new ImageLogic(lsys);
     }
+*/
 
 
 
-}*/
 

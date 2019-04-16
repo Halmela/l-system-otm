@@ -20,7 +20,7 @@ public class Overlord {
         iterations = iter;
 
         stringCreator = new StringCreator(axiom, extractProductionRules(allRules));
-        imageLogic = new ImageLogic(extractDrawingRules(allRules), stringCreator.iterator(iter), vc);
+        imageLogic = new ImageLogic(stringCreator.iterator(iter), extractDrawingRules(allRules), vc);
     }
 
 

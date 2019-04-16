@@ -12,7 +12,7 @@ public class ImageLogic {
     private Vector start;
 
 
-    public ImageLogic(HashMap<String, String[]> rules, String word, Vector vec) {
+    public ImageLogic(String word, HashMap<String, String[]> rules, Vector vec) {
         drawingRules = rules;
         start = vec;
         drawList = listCreator(word);

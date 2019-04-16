@@ -7,9 +7,10 @@ import javafx.scene.canvas.Canvas;
 import javafx.scene.canvas.GraphicsContext;
 import javafx.stage.Stage;
 import lsystem.Overlord;
+import lsystem.Vector;
 
 import java.util.ArrayList;
-
+import java.util.HashMap;
 
 
 public class Screen extends Application{
@@ -18,10 +19,8 @@ public class Screen extends Application{
     private int width;
     private Overlord overi;
 
-    public Screen(int h, int w, Overlord over) {
-        this.height = h;
-        this.width = w;
-        overi = over;
+    public Screen() {
+
     }
 
     @Override
@@ -36,6 +35,33 @@ public class Screen extends Application{
 
         ikkuna.setScene(new Scene(root));
         ikkuna.show();
+    }
+
+    public void init() {
+        HashMap<String, String[]> allRules = new HashMap<>();
+
+        String[] z = new String[3];
+        z[0] = "1[0]0";
+        z[1] = "forward";
+        z[2] = "end";
+        String[] o = new String[2];
+        o[0] = "11";
+        o[1] = "forward";
+        allRules.put("0", z);
+        allRules.put("1", o);
+
+        int h = 1000;
+        int w = 1000;
+        double angle = 60;
+
+        Vector vec = new Vector(w / 2, h, Math.toRadians(angle), 0);
+
+        Overlord over = new Overlord("0", allRules, 2, vec);
+
+        this.height = h;
+        this.width = w;
+        this.overi = over;
+
     }
 
     public static void main(String[] args) {
