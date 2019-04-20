@@ -60,10 +60,6 @@ public class StringCreator {
     }
 
 
-
-
-
-
     public String getAxiom() {
         return axiom;
     }

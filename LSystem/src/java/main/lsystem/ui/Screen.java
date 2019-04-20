@@ -67,6 +67,7 @@ public class Screen extends Application{
         Vector vec = new Vector(w / 2, h /2, Math.toRadians(angle), 0);
 
         Overlord over = new Overlord("0", allRules, 4, vec);
+        System.out.println(over.getStringCreator());
 
         this.height = h;
         this.width = w;
@@ -75,7 +76,7 @@ public class Screen extends Application{
     }
 
     public static void main(String[] args) {
-        launch(Screen.class);
+        launch(args);
     }
 
     public void draw(ArrayList<lsystem.Vector> drawlist, GraphicsContext gc) {

@@ -28,7 +28,6 @@ public class Overlord {
         HashMap<String, String> prodRules = new HashMap<>();
 
         for (String s : all.keySet()) {
-
             prodRules.put(s, all.get(s)[0]);
         }
         return prodRules;
