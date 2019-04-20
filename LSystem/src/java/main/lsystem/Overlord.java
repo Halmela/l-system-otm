@@ -40,7 +40,6 @@ public class Overlord {
         for (String s : all.keySet()) {
             String[] rules = new String[all.get(s).length-1];
 
-
             for (int i = 0; i < rules.length; i++) {
                 rules[i] = all.get(s)[i+1];
             }

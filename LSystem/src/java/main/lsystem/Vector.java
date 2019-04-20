@@ -8,10 +8,10 @@ public class Vector {
     private double startX;
     private double startY;
     private double angle;
-    private int length;
-    private int width;
+    private double length;
+    private double width;
 
-    public Vector(double startX, double startY, double angle, int length, int width) {
+    public Vector(double startX, double startY, double angle, double length, double width) {
         this.startX = startX;
         this.startY = startY;
         this.angle = angle;
@@ -31,11 +31,11 @@ public class Vector {
         return angle;
     }
 
-    public int getLength() {
+    public double getLength() {
         return length;
     }
 
-    public int getWidth() {
+    public double getWidth() {
         return width;
     }
 
@@ -49,11 +49,11 @@ public class Vector {
     }
 
 
-    public void addLength(int length) {
+    public void setLength(double length) {
         this.length += length;
     }
 
-    public void addWidth(int width) {
+    public void setWidth(double width) {
         this.width += width;
     }
 

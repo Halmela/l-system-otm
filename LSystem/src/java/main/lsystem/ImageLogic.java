@@ -1,7 +1,5 @@
 package lsystem;
 
-import lsystem.ui.Screen;
-
 import java.util.ArrayDeque;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -43,19 +41,18 @@ public class ImageLogic {
         double y = start.getStartY();
         double angle = Math.toRadians(270);
         double angleChange = start.getAngle();
-        int length = 20;
+        double length = 20;
         String lastAction = "";
 
         for (String action : listFromWord(word)) {
-            System.out.println(action);
             if (action.equals("forward")) {
                 Vector vec = new Vector(x, y, angle, length, 1);
                 x = vec.getEndX();
                 y = vec.getEndY();
 
-                if (action.equals(lastAction)) {
-                    list.get(list.size()-1).addLength(vec.getLength());
-                    list.get(list.size()-1).addWidth(vec.getWidth());
+                if (lastAction.equals(action)) {
+                    list.get(list.size()-1).setLength(vec.getLength() + list.size()-1).getLength());
+                    list.get(list.size()-1).setWidth(vec.getWidth() + lastVec.getWidth());
                 } else {
                     list.add(vec);
                 }
@@ -75,6 +72,8 @@ public class ImageLogic {
             } else if (action.equals("left")) {
                 angle -= angleChange;
 
+            } else if (action.equals("end")) {
+                list.get(list.size()-1).setWidth(lastVec.getWidth() * 0.5);
             }
             lastAction = action;
         }

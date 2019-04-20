@@ -52,9 +52,10 @@ public class StringCreator {
     public String iterator(int i) {
         String axiom = this.axiom;
 
+        System.out.println(toString());
         for (int j = 0; j < i; j++) {
             axiom = ruleApplier(axiom);
-            System.out.println(j+": "+ axiom);
+            System.out.println((j + 1) +": "+ axiom);
         }
 
         return axiom;

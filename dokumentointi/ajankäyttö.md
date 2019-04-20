@@ -20,5 +20,7 @@
 | 15.4  | 40?	     | Vähän läpsyttelyä ja ideointia|
 | 16.4  | 60         | Hauskaa ja kivaa, toimintaa lisää|
 |       | 120 	     | Helvetin porttien avaamista ja sulkemista|
+| 20.4  | 40	     | JavaFX kuntoon |
+|	| 120	     | Vektorihippaa ja toiminnallisuutta |
 
-Yhteensä 445 min, eli vajaa 7,5 h.
+Yhteensä 605 min, eli reilu 10 h.
