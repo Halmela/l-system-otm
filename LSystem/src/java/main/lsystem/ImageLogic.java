@@ -23,11 +23,11 @@ public class ImageLogic {
         ArrayList<String> list = new ArrayList<>();
 
         System.out.println(word);
-        for (String s : word.split("")) {
+        for (String s : word.split("")) {   // split word to letters
             String[] rules = drawingRules.get(s);
             for (int i = 0; i < rules.length; i++) {
                 list.add(rules[i]);
-                System.out.println(rules[i]);
+                System.out.println(i + ": " + rules[i]);
             }
         }
 
