@@ -15,7 +15,7 @@ public class ImageLogic {
     public ImageLogic(String word, HashMap<String, String[]> rules, Vector vec) {
         drawingRules = rules;
         start = vec;
-        drawList = listCreator(word);
+        drawList = drawListCreator(word);
     }
 
 
@@ -25,9 +25,10 @@ public class ImageLogic {
         System.out.println(word);
         for (String s : word.split("")) {   // split word to letters
             String[] rules = drawingRules.get(s);
+
+            stringArrayPrinter(rules);
             for (int i = 0; i < rules.length; i++) {
                 list.add(rules[i]);
-                System.out.println(i + ": " + rules[i]);
             }
         }
 
@@ -35,45 +36,51 @@ public class ImageLogic {
 	}
 
 
-    public ArrayList<Vector> listCreator(String word) {
+
+    public ArrayList<Vector> drawListCreator(String word) {
         ArrayList<Vector> list = new ArrayList<>();
         ArrayDeque<Vector> tmp = new ArrayDeque<>();
 
         double x = start.getStartX();
         double y = start.getStartY();
-        double angle = 0;
+        double angle = Math.toRadians(270);
         double angleChange = start.getAngle();
-        int length = 5;
+        int length = 20;
 
         for (String action : listFromWord(word)) {
             System.out.println(action);
-            Vector vec = new Vector(x, y, angle, length);
+
 
             if (action.equals("forward")) {
-                list.add(newVector(vec, angle, length));
+                Vector vec = new Vector(x, y, angle, length);
+                list.add(vec);
+                x = vec.getEndX();
+                y = vec.getEndY();
+                System.out.println(vec);
+
             } else if (action.equals("push")) {
-                tmp.add(list.get(list.size() - 1));
+                tmp.push(list.get(list.size() - 1));
+                System.out.println(tmp.peek());
             } else if (action.equals("pop")) {
-                vec = tmp.pop();
+                Vector vec = tmp.pop();
                 x = vec.getEndX();
                 y = vec.getEndY();
                 angle = vec.getAngle();
                 length = vec.getLength();
+                System.out.println(vec);
             } else if (action.equals("right")) {
                 angle += angleChange;
+                System.out.println(angle);
             } else if (action.equals("left")) {
-                angle += angleChange;
+                angle -= angleChange;
+                System.out.println(angle);
             }
         }
         return list;
     }
 
 
-    public Vector newVector(Vector old, double angle, int length) {
-        double x = old.getEndX();
-        double y = old.getEndY();
-        return new Vector(x, y, angle, length);
-    }
+
 
 
     public HashMap<String, String[]> getDrawingRules() {
@@ -82,6 +89,12 @@ public class ImageLogic {
 
     public ArrayList<Vector> getDrawList() {
         return drawList;
+    }
+
+    public void stringArrayPrinter(String[] array) {
+        for (String s : array) {
+            System.out.println(s);
+        }
     }
 }
 

@@ -28,6 +28,7 @@ public class Overlord {
         HashMap<String, String> prodRules = new HashMap<>();
 
         for (String s : all.keySet()) {
+
             prodRules.put(s, all.get(s)[0]);
         }
         return prodRules;
@@ -40,6 +41,7 @@ public class Overlord {
         for (String s : all.keySet()) {
             String[] rules = new String[all.get(s).length-1];
 
+
             for (int i = 0; i < rules.length; i++) {
                 rules[i] = all.get(s)[i+1];
             }
@@ -48,7 +50,6 @@ public class Overlord {
         }
         return drawRules;
     }
-
 
 
     public String getAxiom() {

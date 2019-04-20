@@ -40,4 +40,8 @@ public class Vector {
     public double getEndY() {
         return startY + Math.sin(angle) * length;
     }
+
+    public String toString() {
+        return "(" + startX +","+ startY +") -> ("+ getEndX() +", "+ getEndY()+"), "+ angle;
+    }
 }

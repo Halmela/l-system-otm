@@ -62,11 +62,11 @@ public class Screen extends Application{
 
         int h = 1000;
         int w = 1000;
-        double angle = 60;
+        double angle = 45;
 
-        Vector vec = new Vector(w / 2, h, Math.toRadians(angle), 0);
+        Vector vec = new Vector(w / 2, h /2, Math.toRadians(angle), 0);
 
-        Overlord over = new Overlord("0", allRules, 2, vec);
+        Overlord over = new Overlord("0", allRules, 4, vec);
 
         this.height = h;
         this.width = w;
