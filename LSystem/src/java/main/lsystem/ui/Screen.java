@@ -66,7 +66,7 @@ public class Screen extends Application{
 
         Vector vec = new Vector(w / 2, h, Math.toRadians(angle), 0, 0);
 
-        Overlord over = new Overlord("0", allRules, 6, vec);
+        Overlord over = new Overlord("0", allRules, 5, vec);
 
         this.height = h;
         this.width = w;

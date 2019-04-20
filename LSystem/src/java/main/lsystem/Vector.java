@@ -49,11 +49,11 @@ public class Vector {
     }
 
 
-    public void setLength(double length) {
+    public void addLength(double length) {
         this.length += length;
     }
 
-    public void setWidth(double width) {
+    public void addWidth(double width) {
         this.width += width;
     }
 

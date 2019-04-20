@@ -51,8 +51,8 @@ public class ImageLogic {
                 y = vec.getEndY();
 
                 if (lastAction.equals(action)) {
-                    list.get(list.size()-1).setLength(vec.getLength() + list.size()-1).getLength());
-                    list.get(list.size()-1).setWidth(vec.getWidth() + lastVec.getWidth());
+                    list.get(list.size()-1).addLength(vec.getLength());
+                    list.get(list.size()-1).addWidth(vec.getWidth());
                 } else {
                     list.add(vec);
                 }
@@ -73,16 +73,14 @@ public class ImageLogic {
                 angle -= angleChange;
 
             } else if (action.equals("end")) {
-                list.get(list.size()-1).setWidth(lastVec.getWidth() * 0.5);
+                list.get(list.size()-1).addWidth(-0.5);
+                list.get(list.size()-1).addLength(-0.5 * list.get(list.size()-1).getLength());
             }
             lastAction = action;
         }
         return list;
     }
-
-
-
-
+    
 
     public HashMap<String, String[]> getDrawingRules() {
         return drawingRules;
