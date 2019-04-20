@@ -44,13 +44,21 @@ public class ImageLogic {
         double angle = Math.toRadians(270);
         double angleChange = start.getAngle();
         int length = 20;
+        String lastAction = "";
 
         for (String action : listFromWord(word)) {
+            System.out.println(action);
             if (action.equals("forward")) {
-                Vector vec = new Vector(x, y, angle, length);
-                list.add(vec);
+                Vector vec = new Vector(x, y, angle, length, 1);
                 x = vec.getEndX();
                 y = vec.getEndY();
+
+                if (action.equals(lastAction)) {
+                    list.get(list.size()-1).addLength(vec.getLength());
+                    list.get(list.size()-1).addWidth(vec.getWidth());
+                } else {
+                    list.add(vec);
+                }
 
             } else if (action.equals("push")) {
                 tmp.push(list.get(list.size() - 1));
@@ -60,7 +68,6 @@ public class ImageLogic {
                 x = vec.getEndX();
                 y = vec.getEndY();
                 angle = vec.getAngle();
-                length = vec.getLength();
 
             } else if (action.equals("right")) {
                 angle += angleChange;
@@ -69,6 +76,7 @@ public class ImageLogic {
                 angle -= angleChange;
 
             }
+            lastAction = action;
         }
         return list;
     }

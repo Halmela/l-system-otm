@@ -9,12 +9,14 @@ public class Vector {
     private double startY;
     private double angle;
     private int length;
+    private int width;
 
-    public Vector(double startX, double startY, double angle, int length) {
+    public Vector(double startX, double startY, double angle, int length, int width) {
         this.startX = startX;
         this.startY = startY;
         this.angle = angle;
         this.length = length;
+        this.width = width;
     }
 
     public double getStartX() {
@@ -33,12 +35,26 @@ public class Vector {
         return length;
     }
 
+    public int getWidth() {
+        return width;
+    }
+
+
     public double getEndX() {
         return startX + Math.cos(angle) * length;
     }
 
     public double getEndY() {
         return startY + Math.sin(angle) * length;
+    }
+
+
+    public void addLength(int length) {
+        this.length += length;
+    }
+
+    public void addWidth(int width) {
+        this.width += width;
     }
 
     public String toString() {

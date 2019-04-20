@@ -40,7 +40,7 @@ public class OverlordTest {
         int width = 1000;
         double angle = 60;
 
-        Vector vec = new Vector(width / 2, height, Math.toRadians(angle), 0);
+        Vector vec = new Vector(width / 2, height, Math.toRadians(angle), 0, 0);
 
         overlord = new Overlord("0", allRules, 3, vec);
     }

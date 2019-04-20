@@ -64,9 +64,9 @@ public class Screen extends Application{
         int w = 1000;
         double angle = 45;
 
-        Vector vec = new Vector(w / 2, h /2, Math.toRadians(angle), 0);
+        Vector vec = new Vector(w / 2, h, Math.toRadians(angle), 0, 0);
 
-        Overlord over = new Overlord("0", allRules, 4, vec);
+        Overlord over = new Overlord("0", allRules, 5, vec);
         System.out.println(over.getStringCreator());
 
         this.height = h;
@@ -80,8 +80,8 @@ public class Screen extends Application{
     }
 
     public void draw(ArrayList<lsystem.Vector> drawlist, GraphicsContext gc) {
-        gc.setLineWidth(2);
         for (lsystem.Vector vec : drawlist) {
+            gc.setLineWidth(vec.getWidth());
             gc.strokeLine(vec.getStartX(), vec.getStartY(), vec.getEndX(), vec.getEndY());
         }
     }

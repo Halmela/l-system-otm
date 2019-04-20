@@ -54,6 +54,7 @@ public class StringCreator {
 
         for (int j = 0; j < i; j++) {
             axiom = ruleApplier(axiom);
+            System.out.println(j+": "+ axiom);
         }
 
         return axiom;
