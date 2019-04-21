@@ -22,5 +22,7 @@
 |       | 120 	     | Helvetin porttien avaamista ja sulkemista|
 | 20.4  | 40	     | JavaFX kuntoon |
 |	| 120	     | Vektorihippaa ja toiminnallisuutta |
+| 21.4  | 20 	     | Sekvenssikaavio |
 
-Yhteensä 605 min, eli reilu 10 h.
+
+Yhteensä 625 min, eli vajaa 10,5 h.

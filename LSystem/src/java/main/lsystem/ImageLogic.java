@@ -80,7 +80,7 @@ public class ImageLogic {
         }
         return list;
     }
-    
+
 
     public HashMap<String, String[]> getDrawingRules() {
         return drawingRules;
