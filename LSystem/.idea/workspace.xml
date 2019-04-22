@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="60fc48ba-c00f-4b13-981c-57af3de7d973" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/java/main/lsystem/ImageLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/main/lsystem/ImageLogic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkstyle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/checkstyle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/main/lsystem/ui/Screen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/main/lsystem/ui/Screen.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -45,10 +48,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/java/main/lsystem/ImageLogic.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1474">
+            <state relative-caret-position="880">
               <caret line="82" selection-start-line="82" selection-end-line="82" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -59,11 +62,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/java/main/lsystem/Overlord.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="24">
-              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+              <caret line="14" selection-start-line="14" selection-end-line="14" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -74,12 +77,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/java/main/lsystem/ui/Screen.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="860">
-              <caret line="61" lean-forward="true" selection-start-line="61" selection-end-line="61" />
+            <state relative-caret-position="706">
+              <caret line="60" selection-start-line="60" selection-end-line="60" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1874#1875#0" expanded="true" />
-                <element signature="e#1902#1903#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -190,8 +191,8 @@
         <option value="$PROJECT_DIR$/src/java/main/lsystem/Overlord.java" />
         <option value="$PROJECT_DIR$/src/java/main/lsystem/StringCreator.java" />
         <option value="$PROJECT_DIR$/src/java/main/lsystem/Vector.java" />
-        <option value="$PROJECT_DIR$/src/java/main/lsystem/ui/Screen.java" />
         <option value="$PROJECT_DIR$/src/java/main/lsystem/ImageLogic.java" />
+        <option value="$PROJECT_DIR$/src/java/main/lsystem/ui/Screen.java" />
       </list>
     </option>
   </component>
@@ -203,7 +204,7 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="width" value="1920" />
+    <option name="width" value="960" />
     <option name="height" value="1061" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -434,7 +435,7 @@
       <workItem from="1554807598807" duration="5793000" />
       <workItem from="1555316107410" duration="645000" />
       <workItem from="1555416362024" duration="22878000" />
-      <workItem from="1555754753590" duration="19472000" />
+      <workItem from="1555754753590" duration="22776000" />
     </task>
     <servers />
   </component>
@@ -471,7 +472,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="74169000" />
+    <option name="totallyTimeSpent" value="77473000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -495,7 +496,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32980973" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.1807611" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.065539114" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39957717" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -678,36 +679,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/java/main/lsystem/Overlord.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/java/main/lsystem/ui/Screen.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="860">
-          <caret line="61" lean-forward="true" selection-start-line="61" selection-end-line="61" />
+        <state relative-caret-position="706">
+          <caret line="60" selection-start-line="60" selection-end-line="60" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1874#1875#0" expanded="true" />
-            <element signature="e#1902#1903#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/java/main/lsystem/ImageLogic.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1474">
+        <state relative-caret-position="880">
           <caret line="82" selection-start-line="82" selection-end-line="82" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#2543#2544#0" expanded="true" />
             <element signature="e#2620#2621#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/java/main/lsystem/Overlord.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
