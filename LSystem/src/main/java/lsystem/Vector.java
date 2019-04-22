@@ -58,6 +58,6 @@ public class Vector {
     }
 
     public String toString() {
-        return "(" + startX +","+ startY +") -> ("+ getEndX() +", "+ getEndY()+"), "+ angle;
+        return "(" + startX + "," + startY + ") -> (" + getEndX() + ", " + getEndY() + "), " + angle;
     }
 }

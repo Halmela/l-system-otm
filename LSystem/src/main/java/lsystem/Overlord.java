@@ -38,10 +38,10 @@ public class Overlord {
         HashMap<String, String[]> drawRules = new HashMap<>();
 
         for (String s : all.keySet()) {
-            String[] rules = new String[all.get(s).length-1];
+            String[] rules = new String[all.get(s).length - 1];
 
             for (int i = 0; i < rules.length; i++) {
-                rules[i] = all.get(s)[i+1];
+                rules[i] = all.get(s)[i + 1];
             }
 
             drawRules.put(s, rules);

@@ -41,8 +41,9 @@ public class StringCreator {
         for (String s : word.split("")) {
             if (productionRules.keySet().contains(s)) {
                 current.append(productionRules.get(s));
-            } else
+            } else {
                 current.append(s);
+            }
         }
 
         return current.toString();
@@ -55,7 +56,7 @@ public class StringCreator {
         System.out.println(toString());
         for (int j = 0; j < i; j++) {
             axiom = ruleApplier(axiom);
-            System.out.println((j + 1) +": "+ axiom);
+            System.out.println((j + 1)  + ": " + axiom);
         }
 
         return axiom;
@@ -77,10 +78,10 @@ public class StringCreator {
     @Override
     public String toString() {
         StringBuilder output = new StringBuilder();
-        output.append("\nAxiom: " + axiom +"\n");
+        output.append("\nAxiom: " + axiom + "\n");
         output.append("Alphabet: ");
-        alphabet.forEach(a -> output.append(a +", "));
-        output.deleteCharAt(output.length()-2);
+        alphabet.forEach(a -> output.append(a + ", "));
+        output.deleteCharAt(output.length() - 2);
         output.append("\nRules of production: \n");
 
         for (String rule : productionRules.keySet()) {
