@@ -39,6 +39,7 @@ public class Screen extends Application{
         ikkuna.show();
     }
 
+
     public void init() {
 
 
@@ -53,6 +54,15 @@ public class Screen extends Application{
     public static void main(String[] args) {
         launch(args);
     }
+
+	/**
+	 * Draws given list of vectors to a canvas
+	 *
+	 * @param	drawlist	ArrayList containing every vector
+	 * @param 	gc			A canvas 
+	 *
+	 * @see lsystem.ImageLogic#drawListCreator(String) 
+	 */
 
     public void draw(ArrayList<lsystem.Vector> drawlist, GraphicsContext gc) {
         for (lsystem.Vector vec : drawlist) {

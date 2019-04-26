@@ -1,4 +1,4 @@
-/*
+/**
  * Help helper class for tracking lines in image
  */
 

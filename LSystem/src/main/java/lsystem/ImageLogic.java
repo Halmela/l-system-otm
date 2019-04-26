@@ -1,8 +1,14 @@
+/**
+ * Class transforms given string to a list of vectors used for drawing
+ */
+
+
 package lsystem;
 
 import java.util.ArrayDeque;
 import java.util.ArrayList;
 import java.util.HashMap;
+
 
 public class ImageLogic {
     private ArrayList<Vector> drawList;
@@ -17,7 +23,11 @@ public class ImageLogic {
     }
 
 
-	public ArrayList<String> listFromWord(String word) {
+	/*
+	 * Transforms given word to a list of actions
+	 */
+
+	private ArrayList<String> listFromWord(String word) {
         ArrayList<String> list = new ArrayList<>();
 
         for (String s : word.split("")) {   // split word to letters
@@ -34,6 +44,13 @@ public class ImageLogic {
 	}
 
 
+	/**
+	 * Constructs the instructions for drawing an image based on a given string and drawing rules
+	 *
+	 * @param	word	A string that is constructed by StringCreator
+	 *
+	 * @return	A list containing vectors for drawing
+	 */
 
     public ArrayList<Vector> drawListCreator(String word) {
         ArrayList<Vector> list = new ArrayList<>();

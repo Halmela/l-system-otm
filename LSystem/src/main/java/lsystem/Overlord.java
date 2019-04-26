@@ -1,3 +1,8 @@
+/**
+ * Overlord handles piping rulesets and strings between classes in correct format
+ */
+
+
 package lsystem;
 
 import lsystem.ui.Screen;
@@ -22,6 +27,7 @@ public class Overlord {
         stringCreator = new StringCreator(axiom, extractProductionRules(allRules));
         imageLogic = new ImageLogic(stringCreator.iterator(iter), extractDrawingRules(allRules), vc);
     }
+
 
 
     public HashMap<String, String> extractProductionRules(HashMap<String, String[]> all) {
