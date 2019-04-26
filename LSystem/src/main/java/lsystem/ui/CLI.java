@@ -34,9 +34,9 @@ public class CLI {
         	String cmd = reader.nextLine();
 
         	if (cmd.equals("1")) {
-				System.out.println("Iteraatioiden määrä:);
-				int i = Integer.parseInt(reader.nextLine());
-				return defaultOverlord(i);
+			  	System.out.println("Iteraatioiden määrä:");
+			  	int i = Integer.parseInt(reader.nextLine());
+				return binaryTree(i);
         	} else if (cmd.equals("2")) {
         	    System.out.println("Aksiooma:");
         	    String axiom = reader.nextLine();
