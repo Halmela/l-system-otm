@@ -23,6 +23,7 @@
 | 20.4  | 40	     | JavaFX kuntoon |
 |	| 120	     | Vektorihippaa ja toiminnallisuutta |
 | 21.4  | 20 	     | Sekvenssikaavio |
+| 26.4. | 120		 | Dokumentaatio lähinnä |
 
 
-Yhteensä 625 min, eli vajaa 10,5 h.
+Yhteensä 745 min, eli vajaa 12,5 h.
