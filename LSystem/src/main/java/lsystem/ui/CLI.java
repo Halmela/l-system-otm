@@ -74,31 +74,37 @@ public class CLI {
                 break;
             } else if (rules.keySet().contains(s)) {
                 System.out.println("Merkki löytyy jo");
-            } else {
-                String[] arr = new String[2];
-                System.out.print("Tuotantosääntö: ");
-                arr[0] = reader.nextLine();
-
-                System.out.println("Piirtosäännöt:\n\t Sallittuja sääntöjä 'forward', 'end', 'pop', 'push', 'left', 'right', 'none'");
-                int i = 1;
-                while (true) {
-                    String t = reader.nextLine();
-                    if (t.equals("")) {
-                        break;
-                    } else {
-                        if (i > 1) {
-                            arr = arrayExpander(arr);
-                        }
-
-                        arr[i] = t;
-                        i ++;
-                    }
-                }
-                rules.put(s, arr);
+            } else {                
+                rules.put(s, rulesToCharacter());
             }
         }
         return rules;
     }
+
+
+	public String[] rulesToCharacter() {
+		String[] arr = new String[2];
+        System.out.print("Tuotantosääntö: ");
+	  	arr[0] = reader.nextLine();
+
+		System.out.println("Piirtosäännöt:\n\t Sallittuja sääntöjä 'forward', 'end', 'pop', 'push', 'left', 'right', 'none'");
+        int i = 1;
+        while (true) {
+        String t = reader.nextLine();
+        if (t.equals("")) {
+            break;
+        } else {
+            if (i > 1) {
+                arr = arrayExpander(arr);
+            }
+
+            arr[i] = t;
+            i ++;
+        }
+        }
+			return arr;
+
+	}
 
 
     public String[] arrayExpander(String[] arr) {
