@@ -1,14 +1,16 @@
 package lsystem.domain;
 
-import lsystem.Vector;
+import lsystem.domain.Vector;
+
+import java.util.HashMap;
 
 public class LSystem {
     private String axiom;
-    private HashMap<String,String[] ruleset;
+    private HashMap<String,String[]> ruleset;
     private Vector startVec;
     private int iterations;
 
-    public LSystem(String axiom, HashMap<String, String[] ruleset, Vector startVec, int iterations) {
+    public LSystem(String axiom, HashMap<String, String[]> ruleset, Vector startVec, int iterations) {
         this.axiom = axiom;
         this.ruleset = ruleset;
         this.startVec = startVec;

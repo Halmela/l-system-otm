@@ -6,8 +6,9 @@ import javafx.scene.Scene;
 import javafx.scene.canvas.Canvas;
 import javafx.scene.canvas.GraphicsContext;
 import javafx.stage.Stage;
-import lsystem.Overlord;
-import lsystem.Vector;
+
+import lsystem.domain.Overlord;
+import lsystem.domain.Vector;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -27,7 +28,7 @@ public class Screen extends Application{
 
     @Override
     public void start(Stage ikkuna) {
-        ikkuna.setTitle("Tuhoan maailman");
+        ikkuna.setTitle("Puutuotin (" + width + "x" + height + ")");
         Group root = new Group();
         Canvas canvas = new Canvas(width, height);
         GraphicsContext gc = canvas.getGraphicsContext2D();
@@ -64,8 +65,8 @@ public class Screen extends Application{
 	 * @see lsystem.ImageLogic#drawListCreator(String) 
 	 */
 
-    public void draw(ArrayList<lsystem.Vector> drawlist, GraphicsContext gc) {
-        for (lsystem.Vector vec : drawlist) {
+    public void draw(ArrayList<lsystem.domain.Vector> drawlist, GraphicsContext gc) {
+        for (lsystem.domain.Vector vec : drawlist) {
             gc.setLineWidth(vec.getWidth());
             gc.strokeLine(vec.getStartX(), vec.getStartY(), vec.getEndX(), vec.getEndY());
         }

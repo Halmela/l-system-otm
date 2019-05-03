@@ -1,7 +1,8 @@
 package lsystem.ui;
 
-import lsystem.Overlord;
-import lsystem.Vector;
+import lsystem.domain.Overlord;
+import lsystem.domain.Vector;
+import lsystem.domain.LSystem;
 
 import javax.sound.midi.Soundbank;
 import java.util.HashMap;
@@ -27,10 +28,11 @@ public class CLI {
 	 */
 
     public Overlord command() {
-        System.out.println("Teretulemas Puutuottimeen\n");
-        System.out.println("Anna komento:\n\t1: tee binääripuu\n\t2: tee muu puu");
+        System.out.println("Tervetuloa Puutuottimeen\n");
 		
 		while(true) {
+            
+            System.out.println("Anna komento:\n\t1: tee binääripuu\n\t2: tee muu puu\n\t3: muuta näytön kokoa");
         	String cmd = reader.nextLine();
 
         	if (cmd.equals("1")) {
@@ -41,8 +43,6 @@ public class CLI {
         	    System.out.println("Aksiooma:");
         	    String axiom = reader.nextLine();
 
-        	    HashMap<String, String[]> newRules = newRules();
-
         	    System.out.println("Kulma asteina:");
         	    double a = Double.parseDouble(reader.nextLine());
 
@@ -50,9 +50,21 @@ public class CLI {
         	    int i = Integer.parseInt(reader.nextLine());
 
         	    Vector vec = new Vector(width / 2, height, Math.toRadians(a), 0, 0);
-        	    return new Overlord(axiom, newRules, i, vec);
-        	}
+                LSystem lSystem =  new LSystem(axiom, newRules(), vec, i);
+
+        	    return new Overlord(lSystem);
+        	} else if (cmd.equals("3")) {
+                System.out.println("Korkeus:");
+                this.height = Integer.parseInt(reader.nextLine());
+                System.out.println(this.height);
+                System.out.println("Leveys:");
+                this.width = Integer.parseInt(reader.nextLine());
+                System.out.println(this.width);
+                
+                continue;
+            } else {
 			System.out.println("Yritä uudelleen");
+            }
 		}
 	
     }
@@ -149,9 +161,10 @@ public class CLI {
         allRules.put("[", f);
         allRules.put("]", d);
 
-        Vector vec = new Vector(this.height / 2, width, Math.toRadians(angle), 0, 0);
+        Vector vec = new Vector(this.width / 2, height, Math.toRadians(angle), 0, 0);
+        LSystem lsys = new LSystem("0", allRules, vec, iterations);
 
-        return new Overlord("0", allRules, iterations, vec);
+        return new Overlord(lsys);
     }
 
 
@@ -163,10 +176,5 @@ public class CLI {
 
     public int getWidth() {
         return width;
-    }
-
-
-    public Vector getStart() {
-        return start;
     }
 }

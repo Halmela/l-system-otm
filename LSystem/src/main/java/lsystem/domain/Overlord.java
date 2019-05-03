@@ -14,18 +14,14 @@ public class Overlord {
     private StringCreator stringCreator;
     private ImageLogic imageLogic;
 
-    private String axiom;
-    private HashMap<String, String[]> allRules;
-    private int iterations;
+    private LSystem lSystem;
 
 
-    public Overlord(String start, HashMap<String, String[]> rules, int iter, Vector vc) {
-        axiom = start;
-        allRules = rules;
-        iterations = iter;
+    public Overlord(LSystem lSystem) {
+        this.lSystem = lSystem;
 
-        stringCreator = new StringCreator(axiom, extractProductionRules(allRules));
-        imageLogic = new ImageLogic(stringCreator.iterator(iter), extractDrawingRules(allRules), vc);
+        stringCreator = new StringCreator(lSystem.getAxiom(), extractProductionRules(lSystem.getRuleset()));
+        imageLogic = new ImageLogic(stringCreator.iterator(lSystem.getIterations()), extractDrawingRules(lSystem.getRuleset()), lSystem.getStartVec());
     }
 
 
@@ -56,12 +52,8 @@ public class Overlord {
     }
 
 
-    public String getAxiom() {
-        return axiom;
-    }
-
-    public HashMap<String, String[]> getAllRules() {
-        return allRules;
+    public LSystem getLSystem() {
+        return this.lSystem;
     }
 
 
