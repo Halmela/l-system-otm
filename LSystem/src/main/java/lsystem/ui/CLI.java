@@ -3,10 +3,11 @@ package lsystem.ui;
 import lsystem.domain.Overlord;
 import lsystem.domain.Vector;
 import lsystem.domain.LSystem;
+import lsystem.dao.LSystemDao;
 
-import javax.sound.midi.Soundbank;
 import java.util.HashMap;
 import java.util.Scanner;
+import java.util.ArrayList;
 
 public class CLI {
     private Scanner reader;
@@ -32,7 +33,7 @@ public class CLI {
 		
 		while(true) {
             
-            System.out.println("Anna komento:\n\t1: tee binääripuu\n\t2: tee muu puu\n\t3: muuta näytön kokoa");
+            System.out.println("Anna komento:\n\t1: tee binääripuu\n\t2: tee muu puu\n\t3: muuta näytön kokoa\n\t 4 lataa tiedostosta");
         	String cmd = reader.nextLine();
 
         	if (cmd.equals("1")) {
@@ -62,8 +63,17 @@ public class CLI {
                 System.out.println(this.width);
                 
                 continue;
+            } else if(cmd.equals("4")) {
+                try {
+                    System.out.println("eka testi");
+                    LSystemDao dao = new LSystemDao("conf.txt");
+                    System.out.println("toka testi");
+                    return new Overlord(dao.getLSystems().get(0));
+                } catch (Exception e) {
+                    System.out.println("virhe tilanne: " + e.getMessage());
+                }
             } else {
-			System.out.println("Yritä uudelleen");
+                System.out.println("Yritä uudelleen");
             }
 		}
 	
@@ -163,6 +173,8 @@ public class CLI {
 
         Vector vec = new Vector(this.width / 2, height, Math.toRadians(angle), 0, 0);
         LSystem lsys = new LSystem("0", allRules, vec, iterations);
+
+        System.out.println(lsys);
 
         return new Overlord(lsys);
     }

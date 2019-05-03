@@ -1,4 +1,4 @@
-package lsystem;
+package lsystem.domain;
 
 
 import org.junit.Before;

@@ -20,7 +20,7 @@ public class Screen extends Application{
     private int height;
     private int width;
     private Overlord overi;
-    private Scanner reader;
+    private Scanner scanner;
 
     public Screen() {
 
@@ -44,8 +44,8 @@ public class Screen extends Application{
     public void init() {
 
 
-        this.reader = new Scanner(System.in);
-        CLI cli = new CLI(reader);
+        this.scanner = new Scanner(System.in);
+        CLI cli = new CLI(scanner);
 
         this.overi = cli.command();
         this.width = cli.getWidth();

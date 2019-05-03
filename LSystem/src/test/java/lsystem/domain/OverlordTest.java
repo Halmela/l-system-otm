@@ -1,4 +1,4 @@
-package lsystem;
+package lsystem.domain;
 
 import lsystem.ui.Screen;
 import org.junit.Before;
@@ -41,8 +41,9 @@ public class OverlordTest {
         double angle = 60;
 
         Vector vec = new Vector(width / 2, height, Math.toRadians(angle), 0, 0);
+        LSystem lSystem = new LSystem("0", allRules, vec, 3);
 
-        overlord = new Overlord("0", allRules, 3, vec);
+        overlord = new Overlord(lSystem);
     }
 
     @Test
@@ -53,7 +54,7 @@ public class OverlordTest {
         productionRules.put("[", "[");
         productionRules.put("]", "]");
 
-        assertEquals(overlord.extractProductionRules(overlord.getAllRules()), productionRules);
+        assertEquals(overlord.extractProductionRules(overlord.getLSystem().getRuleset()), productionRules);
     }
 
 
