@@ -45,8 +45,9 @@ public class ImageLogic {
 
 
 	/**
-	 * Constructs the instructions for drawing an image based on a given string and drawing rules
-	 *
+	 * Constructs the instructions for drawing an image 
+	 * based on a given string and drawing rules
+     *
 	 * @param	word	A string that is constructed by StringCreator
 	 *
 	 * @return	A list containing vectors for drawing

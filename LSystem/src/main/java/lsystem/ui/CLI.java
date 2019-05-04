@@ -10,14 +10,14 @@ import java.util.Scanner;
 import java.util.ArrayList;
 
 public class CLI {
-    private Scanner reader;
+    private Scanner scanner;
     private int height;
     private int width;
     private double angle;
     private Vector start;
 
-    public CLI(Scanner read) {
-        this.reader = read;
+    public CLI(Scanner scan) {
+        this.scanner = scan;
         this.height = 1000;
         this.width = 1000;
         this.angle = 45;
@@ -33,22 +33,22 @@ public class CLI {
 		
 		while(true) {
             
-            System.out.println("Anna komento:\n\t1: tee binääripuu\n\t2: tee muu puu\n\t3: muuta näytön kokoa\n\t 4 lataa tiedostosta");
-        	String cmd = reader.nextLine();
+            System.out.println("Anna komento:\n\t1: tee binääripuu\n\t2: tee muu puu\n\t3: muuta näytön kokoa\n\t4: lataa tiedostosta");
+        	String cmd = scanner.nextLine();
 
         	if (cmd.equals("1")) {
 			  	System.out.println("Iteraatioiden määrä:");
-			  	int i = Integer.parseInt(reader.nextLine());
+			  	int i = Integer.parseInt(scanner.nextLine());
 				return binaryTree(i);
         	} else if (cmd.equals("2")) {
         	    System.out.println("Aksiooma:");
-        	    String axiom = reader.nextLine();
+        	    String axiom = scanner.nextLine();
 
         	    System.out.println("Kulma asteina:");
-        	    double a = Double.parseDouble(reader.nextLine());
+        	    double a = Double.parseDouble(scanner.nextLine());
 
         	    System.out.println("Iteraatioiden määrä:");
-        	    int i = Integer.parseInt(reader.nextLine());
+        	    int i = Integer.parseInt(scanner.nextLine());
 
         	    Vector vec = new Vector(width / 2, height, Math.toRadians(a), 0, 0);
                 LSystem lSystem =  new LSystem(axiom, newRules(), vec, i);
@@ -56,19 +56,39 @@ public class CLI {
         	    return new Overlord(lSystem);
         	} else if (cmd.equals("3")) {
                 System.out.println("Korkeus:");
-                this.height = Integer.parseInt(reader.nextLine());
+                this.height = Integer.parseInt(scanner.nextLine());
                 System.out.println(this.height);
                 System.out.println("Leveys:");
-                this.width = Integer.parseInt(reader.nextLine());
+                this.width = Integer.parseInt(scanner.nextLine());
                 System.out.println(this.width);
                 
                 continue;
             } else if(cmd.equals("4")) {
                 try {
-                    System.out.println("eka testi");
                     LSystemDao dao = new LSystemDao("conf.txt");
-                    System.out.println("toka testi");
-                    return new Overlord(dao.getLSystems().get(0));
+                    ArrayList<LSystem> lSystems = dao.getLSystems();
+
+                    System.out.println("Valitse l-systeemi kirjoittamalla id:\n");
+                    for (int i = 0; i < lSystems.size() ; i++) {
+                        System.out.println("id: " + i + "\n" + lSystems.get(i));
+                    }
+
+                    int id = 0;
+
+                    while(true) {
+                        try {
+                            id = Integer.parseInt(scanner.nextLine());
+                            if (id < 0 || id >= lSystems.size()) {
+                                System.out.println("Yritä uudelleen");
+                                continue;
+                            }
+                            break;
+                        } catch (Exception e){
+                            System.out.println("Yritä uudelleen");
+                        }
+                    }
+
+                    return new Overlord(lSystems.get(id));
                 } catch (Exception e) {
                     System.out.println("virhe tilanne: " + e.getMessage());
                 }
@@ -91,7 +111,7 @@ public class CLI {
 
         while (true) {
             System.out.print("Merkki: ");
-            String s = reader.nextLine();
+            String s = scanner.nextLine();
             if (s.equals("")) {
                 break;
             } else if (rules.keySet().contains(s)) {
@@ -107,12 +127,12 @@ public class CLI {
 	public String[] rulesToCharacter() {
 		String[] arr = new String[2];
         System.out.print("Tuotantosääntö: ");
-	  	arr[0] = reader.nextLine();
+	  	arr[0] = scanner.nextLine();
 
 		System.out.println("Piirtosäännöt:\n\t Sallittuja sääntöjä 'forward', 'end', 'pop', 'push', 'left', 'right', 'none'");
         int i = 1;
         while (true) {
-        String t = reader.nextLine();
+        String t = scanner.nextLine();
         if (t.equals("")) {
             break;
         } else {

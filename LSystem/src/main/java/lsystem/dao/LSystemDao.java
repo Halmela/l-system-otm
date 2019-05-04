@@ -19,12 +19,10 @@ public class LSystemDao {
         this.lSystems = new ArrayList();
         this.file = file;
         try {
-            System.out.println("olen dao");
             Scanner scanner = new Scanner(new File(file));
             while (scanner.hasNextLine()){
                 lSystems.add(parse(scanner.nextLine()));
             }
-            System.out.println("dd" + lSystems.toString());
         } catch (Exception e) {
             System.out.println("dao-virhe: " + e.getMessage() + "");
             //FileWriter writer = new FileWriter(new File(file));
@@ -32,6 +30,14 @@ public class LSystemDao {
         }
     }
 
+
+    /**
+     * Parses an L-system from a given string representation
+     *
+     * @param line  A line read from the file 
+     *
+     * @return LSystem created from the line
+     */
 
     public LSystem parse(String line){
         String[] parts = line.split(";");
@@ -56,6 +62,10 @@ public class LSystemDao {
         return new LSystem(axiom, ruleset, vec, iterations);
     }
 
+
+    /**
+     * Converts all L-systems to string and saves them 
+     */
 
     public void save() throws Exception {
         try (FileWriter writer = new FileWriter(new File(file))) {
