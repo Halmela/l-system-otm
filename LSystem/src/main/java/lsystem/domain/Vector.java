@@ -6,6 +6,12 @@ package lsystem.domain;
 
 import java.util.Objects;
 
+/**
+ * Vectors are used for storing location information
+ * Starting vectors have length and width of 0
+ * Starting length can be used to store information of angle (ebin haxx)
+ */
+
 public class Vector {
     private double startX;
     private double startY;

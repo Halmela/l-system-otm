@@ -5,6 +5,12 @@ import lsystem.domain.Vector;
 import java.util.HashMap;
 import java.util.Objects;
 
+/**
+ * LSystems store information in most compact form
+ * Created in interface or loaded from file
+ * Transferred to Overlord
+ */
+
 public class LSystem {
     private String axiom;
     private HashMap<String,String[]> ruleset;
@@ -79,9 +85,6 @@ public class LSystem {
         this.ruleset = ruleset;
     }
 
-    public void setStartVec(Vector startVec) {
-        this.startVec = startVec;
-    }
 
     public void setIterations(int iterations) {
         this.iterations = iterations;

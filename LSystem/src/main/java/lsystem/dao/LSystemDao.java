@@ -90,6 +90,13 @@ public class LSystemDao {
     }
 
 
+    /**
+     * Create string representation of a ruleset
+     * Used for saving
+     * @param ruleset
+     * @return ruleset as String
+     */
+
     public String rulesToString(HashMap<String, String[]> ruleset) {
         StringBuilder string = new StringBuilder();
 

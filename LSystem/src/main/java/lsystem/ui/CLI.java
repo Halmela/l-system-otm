@@ -106,6 +106,13 @@ public class CLI {
 
     }
 
+
+    /**
+     * Dialog to alter existing L-Systems
+     * @param lSystem
+     * @return modified LSystem
+     */
+
     public LSystem modifyLSystem(LSystem lSystem) {
         LSystem newSys = lSystem;
 
@@ -152,6 +159,10 @@ public class CLI {
     }
 
 
+    /**
+     * Change size of screen
+     */
+
     public boolean changeSize() {
         try {
             System.out.println("Leveys:");
@@ -165,6 +176,10 @@ public class CLI {
         }
 
     }
+
+    /**
+     * Select id with sanitation
+     */
 
     public int selectId () {
         System.out.println("Anna id, -1 palaa takaisin:");
@@ -187,6 +202,11 @@ public class CLI {
         return id;
     }
 
+
+    /**
+     * Dialog for creating a new LSystem
+     * @return brand new LSystem
+     */
 
     public LSystem lSystemDialog() {
         System.out.println("Aksiooma:");
@@ -228,6 +248,11 @@ public class CLI {
     }
 
 
+    /**
+     * A set of rules for a character
+     * @return String[] containing production and drawing rules
+     */
+
 	public String[] rulesToCharacter() {
 		String[] arr = new String[2];
         System.out.print("Tuotantosääntö: ");
@@ -252,6 +277,12 @@ public class CLI {
 
 	}
 
+
+    /**
+     * Expand array to fit one more element
+     * @param arr
+     * @return arr with size ++
+     */
 
     public String[] arrayExpander(String[] arr) {
         String[] nArr = new String[arr.length + 1];
