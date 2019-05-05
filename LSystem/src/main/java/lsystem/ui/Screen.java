@@ -7,6 +7,7 @@ import javafx.scene.canvas.Canvas;
 import javafx.scene.canvas.GraphicsContext;
 import javafx.stage.Stage;
 
+import lsystem.dao.LSystemDao;
 import lsystem.domain.Overlord;
 import lsystem.domain.Vector;
 
@@ -21,6 +22,7 @@ public class Screen extends Application{
     private int width;
     private Overlord overi;
     private Scanner scanner;
+    private LSystemDao dao;
 
     public Screen() {
 
@@ -42,12 +44,18 @@ public class Screen extends Application{
 
 
     public void init() {
-
-
         this.scanner = new Scanner(System.in);
-        CLI cli = new CLI(scanner);
+        String file = "conf.txt";
 
-        this.overi = cli.command();
+        try {
+            this.dao = new LSystemDao(file);
+        } catch (Exception e) {
+            System.out.println("virhe: " + e.getMessage());
+        }
+
+        CLI cli = new CLI(scanner, dao);
+
+        this.overi = cli.getOverlord();
         this.width = cli.getWidth();
         this.height = cli.getHeight();
     }
@@ -56,13 +64,14 @@ public class Screen extends Application{
         launch(args);
     }
 
+
 	/**
 	 * Draws given list of vectors to a canvas
 	 *
 	 * @param	drawlist	ArrayList containing every vector
 	 * @param 	gc			A canvas 
 	 *
-	 * @see lsystem.ImageLogic#drawListCreator(String) 
+	 * @see lsystem.domain.ImageLogic#drawListCreator(String)
 	 */
 
     public void draw(ArrayList<lsystem.domain.Vector> drawlist, GraphicsContext gc) {

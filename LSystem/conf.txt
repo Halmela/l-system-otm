@@ -1,1 +1,3 @@
-0;3;500;1000;45;0;0;0,1[0]0,forward,end:1,11,forward:[,[,push,left:],],pop,right
+0;3;500.0;1000.0;45.0;0.0;0.0;0,1[0]0,forward,end:1,11,forward:[,[,push,left:],],pop,right
+F-G-G;4;960.0;1080.0;119.99999999999999;0.0;0.0;F,F-G+F+G-F,forward:G,GG,forward:+,+,right:-,-,left
+X;5;960.0;1080.0;25.0;0.0;0.0;F,FF,forward:X,F+[[X]-X]-F[-FX]+X,none:+,+,right:[,[,push:-,-,left:],],pop

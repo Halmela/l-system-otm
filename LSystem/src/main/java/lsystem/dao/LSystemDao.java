@@ -59,7 +59,7 @@ public class LSystemDao {
             ruleset.put(ax, rules);
         }
 
-        return new LSystem(axiom, ruleset, vec, iterations);
+        return new LSystem(axiom, iterations, vec, ruleset);
     }
 
 
@@ -71,14 +71,16 @@ public class LSystemDao {
         try (FileWriter writer = new FileWriter(new File(file))) {
             for (LSystem lsys : lSystems) {
                 writer.write(lsys.getAxiom() + ";" +
-                             lsys.getIterations() + ";" + 
-                             lsys.getStartVec().getStartX() + ";" +
-                             lsys.getStartVec().getStartY() + ";" +
-                             lsys.getStartVec().getAngle() + ";" +
-                             lsys.getStartVec().getLength() + ";" +
-                             lsys.getStartVec().getWidth() + ";" +
-                             rulesToString(lsys.getRuleset()) + "\n");
+                        lsys.getIterations() + ";" +
+                        lsys.getStartVec().getStartX() + ";" +
+                        lsys.getStartVec().getStartY() + ";" +
+                        Math.toDegrees(lsys.getStartVec().getAngle()) + ";" +
+                        lsys.getStartVec().getLength() + ";" +
+                        lsys.getStartVec().getWidth() + ";" +
+                        rulesToString(lsys.getRuleset()) + "\n");
             }
+        } catch (Exception e) {
+            System.out.println("tallennus virhe: " + e.getMessage());
         }
     }
 

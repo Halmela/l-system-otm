@@ -41,7 +41,7 @@ public class OverlordTest {
         double angle = 60;
 
         Vector vec = new Vector(width / 2, height, Math.toRadians(angle), 0, 0);
-        LSystem lSystem = new LSystem("0", allRules, vec, 3);
+        LSystem lSystem = new LSystem("0", 3, vec, allRules);
 
         overlord = new Overlord(lSystem);
     }

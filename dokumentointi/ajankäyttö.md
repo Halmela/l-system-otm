@@ -24,8 +24,8 @@
 |	| 120	     | Vektorihippaa ja toiminnallisuutta |
 | 21.4  | 20 	     | Sekvenssikaavio |
 | 26.4. | 120		 | Dokumentaatio lähinnä |
-| 3.4.  | 90         | LSysteemi olioksi |
+| 3.5.  | 90         | LSysteemi olioksi |
 |       | 150        | DAOn synnytys |
+| 5.5   | 240	     | Kälin hiomista ja toimintaa|
 
-
-Yhteensä 1005 min, eli 16,5 h.
+Yhteensä 1245 min, eli 20,5 h.

@@ -3,6 +3,7 @@ package lsystem.domain;
 import lsystem.domain.Vector;
 
 import java.util.HashMap;
+import java.util.Objects;
 
 public class LSystem {
     private String axiom;
@@ -10,7 +11,7 @@ public class LSystem {
     private Vector startVec;
     private int iterations;
 
-    public LSystem(String axiom, HashMap<String, String[]> ruleset, Vector startVec, int iterations) {
+    public LSystem(String axiom, int iterations, Vector startVec, HashMap<String, String[]> ruleset) {
         this.axiom = axiom;
         this.ruleset = ruleset;
         this.startVec = startVec;
@@ -53,4 +54,36 @@ public class LSystem {
         return string.toString();
     }
 
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        LSystem lSystem = (LSystem) o;
+        return iterations == lSystem.iterations &&
+                axiom.equals(lSystem.axiom) &&
+                ruleset.equals(lSystem.ruleset) &&
+                startVec.equals(lSystem.startVec);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(axiom, ruleset, startVec, iterations);
+    }
+
+    public void setAxiom(String axiom) {
+        this.axiom = axiom;
+    }
+
+    public void setRuleset(HashMap<String, String[]> ruleset) {
+        this.ruleset = ruleset;
+    }
+
+    public void setStartVec(Vector startVec) {
+        this.startVec = startVec;
+    }
+
+    public void setIterations(int iterations) {
+        this.iterations = iterations;
+    }
 }

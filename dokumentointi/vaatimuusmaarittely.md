@@ -16,16 +16,17 @@ Merkkijonosta voidaan myös piirtää kuva ns. kilpikonnapiirtämistä käyttäe
 
 * Käyttäjä voi määritellä L-systeemin (niin merkkijonon luonnin kuin kuvan parametrit) itse ja tallettaa ne
 * Ohjelma piirtää määritellyn kuvion
-	* Ohjelman pitää myös kyetä skaalaamaan kuva ikkunan kokoiseksi
 * Täysi tuki deterministisille L-systeemeille
+* L-systeemin tallentaminen merkkijonolla erilliseen tiedostoon
+* Komentorivikäyttöliittymä
 
 ### Jatkokehitysideoita
 
 * Tuki stokastisille ja parametrillisille L-systeemeille
 * Kuvion piirtämisen animointi
 	* Joko iteraatio kerrallaan, viiva kerrallaan tai parhaassa tapauksessa puun kasvua simuloiva alhaalta ylöspäin kasvaminen
-* Käyttäjälle mahdollisuus käyttää ohjelmaa komentoriviltä tai graafisessa ympäristössä
+* Graafisenen käyttöliittymä
 * Mahdollisuus konfiguroida ikkunasta ja kuvasta oikean kokoinen
 * Useiden kuvioiden piirtäminen samaan kuvaan
-* Merkkijonon ja kuvan tallentaminen erilliseen tiedostoon
+* Kuvan tallentaminen erilliseen tiedostoon
 

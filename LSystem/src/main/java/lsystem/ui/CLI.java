@@ -9,18 +9,24 @@ import java.util.HashMap;
 import java.util.Scanner;
 import java.util.ArrayList;
 
+
+
 public class CLI {
     private Scanner scanner;
     private int height;
     private int width;
     private double angle;
     private Vector start;
+    private LSystemDao lSysDao;
+    private Overlord overlord;
 
-    public CLI(Scanner scan) {
+    public CLI(Scanner scan, LSystemDao dao) {
         this.scanner = scan;
-        this.height = 1000;
-        this.width = 1000;
+        this.lSysDao = dao;
+        this.height = 1080;
+        this.width = 1920;
         this.angle = 45;
+        command();
     }
 
 
@@ -28,75 +34,173 @@ public class CLI {
 	 * Handles user input 
 	 */
 
-    public Overlord command() {
+    public void command() {
         System.out.println("Tervetuloa Puutuottimeen\n");
 		
 		while(true) {
-            
-            System.out.println("Anna komento:\n\t1: tee binääripuu\n\t2: tee muu puu\n\t3: muuta näytön kokoa\n\t4: lataa tiedostosta");
-        	String cmd = scanner.nextLine();
 
-        	if (cmd.equals("1")) {
-			  	System.out.println("Iteraatioiden määrä:");
-			  	int i = Integer.parseInt(scanner.nextLine());
-				return binaryTree(i);
-        	} else if (cmd.equals("2")) {
-        	    System.out.println("Aksiooma:");
-        	    String axiom = scanner.nextLine();
+            System.out.println("Anna komento:\n\t" +
+                    "1: Näytä puut\n\t" +
+                    "2: Tee valmis puu\n\t" +
+                    "3: Tee uusi puu\n\t" +
+                    "4: Muuta näytön kokoa (nykyinen koko: " + width + " x " + height + ")\n\t" +
+                    "5: Tallenna puut\n\t" +
+                    "6: Muuta puuta");
+            String cmd = scanner.nextLine();
+            System.out.println();
 
-        	    System.out.println("Kulma asteina:");
-        	    double a = Double.parseDouble(scanner.nextLine());
+            if (cmd.equals("1")) {
+                ArrayList<LSystem> lSystems = lSysDao.getLSystems();
 
-        	    System.out.println("Iteraatioiden määrä:");
-        	    int i = Integer.parseInt(scanner.nextLine());
-
-        	    Vector vec = new Vector(width / 2, height, Math.toRadians(a), 0, 0);
-                LSystem lSystem =  new LSystem(axiom, newRules(), vec, i);
-
-        	    return new Overlord(lSystem);
-        	} else if (cmd.equals("3")) {
-                System.out.println("Korkeus:");
-                this.height = Integer.parseInt(scanner.nextLine());
-                System.out.println(this.height);
-                System.out.println("Leveys:");
-                this.width = Integer.parseInt(scanner.nextLine());
-                System.out.println(this.width);
-                
-                continue;
-            } else if(cmd.equals("4")) {
-                try {
-                    LSystemDao dao = new LSystemDao("conf.txt");
-                    ArrayList<LSystem> lSystems = dao.getLSystems();
-
-                    System.out.println("Valitse l-systeemi kirjoittamalla id:\n");
-                    for (int i = 0; i < lSystems.size() ; i++) {
-                        System.out.println("id: " + i + "\n" + lSystems.get(i));
-                    }
-
-                    int id = 0;
-
-                    while(true) {
-                        try {
-                            id = Integer.parseInt(scanner.nextLine());
-                            if (id < 0 || id >= lSystems.size()) {
-                                System.out.println("Yritä uudelleen");
-                                continue;
-                            }
-                            break;
-                        } catch (Exception e){
-                            System.out.println("Yritä uudelleen");
-                        }
-                    }
-
-                    return new Overlord(lSystems.get(id));
-                } catch (Exception e) {
-                    System.out.println("virhe tilanne: " + e.getMessage());
+                for (int i = 0; i < lSystems.size(); i++) {
+                    System.out.println("id: " + i + "\n" + lSystems.get(i) + "\n");
                 }
+
+            } else if (cmd.equals("2")) {
+                System.out.println("Anna id");
+                int id = selectId();
+
+                if (id == -1) {
+                    continue;
+                }
+
+                overlord = new Overlord(lSysDao.getLSystems().get(id));
+                break;
+
+            } else if (cmd.equals("3")) {
+        	    LSystem lSystem = lSystemDialog();
+        	    lSysDao.getLSystems().add(lSystem);
+
+                try {
+                    lSysDao.save();
+                } catch (Exception e) {
+                    System.out.println("tallennus epäonnistui");
+                }
+
+
+        	} else if (cmd.equals("4")) {
+                while (!changeSize());
+
+            } else if(cmd.equals("5")) {
+                try {
+                    lSysDao.save();
+                    System.out.println("onnistui");
+                } catch (Exception e) {
+                    System.out.println("ei: " + e.getMessage());
+                }
+            } else if (cmd.equals("6")) {
+                System.out.println("Anna id");
+                int id = selectId();
+
+                if (id == -1) {
+                    continue;
+                }
+
+                LSystem lsys = lSysDao.getLSystems().get(id);
+                lSysDao.getLSystems().set(id, modifyLSystem(lsys));
+
             } else {
                 System.out.println("Yritä uudelleen");
             }
 		}
-	
+
+    }
+
+    public LSystem modifyLSystem(LSystem lSystem) {
+        LSystem newSys = lSystem;
+
+        System.out.println(newSys);
+        System.out.println("Mitä muutetaan? Joudut elämään virheidesi kanssa...");
+
+        boolean continues = true;
+        while (continues) {
+            System.out.println("\t1: aksiooma\n\t" +
+                               "2: iteraatiot\n\t" +
+                               "3: säännöt\n\t" +
+                               "4: kulma\n\t" +
+                               "5: aloituspaikka\n\t" +
+                               "6: aloituskulma\n\t" +
+                               "Mikä tahansa muu lopettaa");
+
+            switch (scanner.nextLine()) {
+                case "1":   newSys.setAxiom(scanner.nextLine());
+                            break;
+
+                case "2":   newSys.setIterations(Integer.parseInt(scanner.nextLine()));
+                            break;
+
+                case "3":   newSys.setRuleset(newRules());
+                            break;
+
+                case "4":   newSys.getStartVec().setAngle(Double.parseDouble(scanner.nextLine()));
+                            break;
+
+                case "5":   System.out.print("x: ");
+                            newSys.getStartVec().setStartX(Double.parseDouble(scanner.nextLine()));
+                            System.out.print("y: ");
+                            newSys.getStartVec().setStartY(Double.parseDouble(scanner.nextLine()));
+                            break;
+
+                default:    continues = false;
+                            break;
+            }
+
+        }
+
+
+        return newSys;
+    }
+
+
+    public boolean changeSize() {
+        try {
+            System.out.println("Leveys:");
+            int wid = Integer.parseInt(scanner.nextLine());
+            System.out.println("Korkeus:");
+            this.height = Integer.parseInt(scanner.nextLine());
+            this.width = wid;
+            return true;
+        } catch (Exception e) {
+            return false;
+        }
+
+    }
+
+    public int selectId () {
+        System.out.println("Anna id, -1 palaa takaisin:");
+        int id = 0;
+
+        while(true) {
+            try {
+                id = Integer.parseInt(scanner.nextLine());
+
+                if ( id != -1 && (id < 0 || id >= lSysDao.getLSystems().size())) {
+                    System.out.println("Yritä uudelleen");
+                    continue;
+                }
+                break;
+            } catch (Exception e){
+                System.out.println("Yritä uudelleen");
+            }
+        }
+
+        return id;
+    }
+
+
+    public LSystem lSystemDialog() {
+        System.out.println("Aksiooma:");
+        String axiom = scanner.nextLine();
+
+        System.out.println("Kulma asteina:");
+        double a = Double.parseDouble(scanner.nextLine());
+
+        System.out.println("Iteraatioiden määrä:");
+        int i = Integer.parseInt(scanner.nextLine());
+
+        Vector vec = new Vector(width / 2, height, Math.toRadians(a), 0, 0);
+        LSystem lSystem =  new LSystem(axiom, i, vec, newRules());
+        return lSystem;
     }
 
 
@@ -110,7 +214,7 @@ public class CLI {
         HashMap<String, String[]> rules = new HashMap<>();
 
         while (true) {
-            System.out.print("Merkki: ");
+            System.out.println("Merkki: ");
             String s = scanner.nextLine();
             if (s.equals("")) {
                 break;
@@ -160,46 +264,10 @@ public class CLI {
     }
 
 
-	/**
-	 * Creates a binary tree, if user doesn't create a new tree
-	 */
 
-    public Overlord binaryTree(int iterations) {
-        HashMap<String, String[]> allRules = new HashMap<>();
-
-        String[] z  = new String[3];
-        z[0]        = "1[0]0";
-        z[1]        = "forward";
-        z[2]        = "end";
-
-        String[] o  = new String[2];
-        o[0]        = "11";
-        o[1]        = "forward";
-
-        String[] f  = new String[3];
-        f[0]        = "[";
-        f[1]        = "push";
-        f[2]        = "left";
-
-        String[] d  = new String[3];
-        d[0]        = "]";
-        d[1]        = "pop";
-        d[2]        = "right";
-
-        allRules.put("0", z);
-        allRules.put("1", o);
-        allRules.put("[", f);
-        allRules.put("]", d);
-
-        Vector vec = new Vector(this.width / 2, height, Math.toRadians(angle), 0, 0);
-        LSystem lsys = new LSystem("0", allRules, vec, iterations);
-
-        System.out.println(lsys);
-
-        return new Overlord(lsys);
+    public Overlord getOverlord() {
+        return overlord;
     }
-
-
 
 
     public int getHeight() {
