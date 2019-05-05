@@ -13,4 +13,6 @@ Sovellus on osa Helsingin yliopiston Tietojenkäsittelytieteen Ohjelmistotekniik
 
 [Työaikakirjanpito](https://github.com/Halmela/l-system-otm/blob/master/dokumentointi/ajank%C3%A4ytt%C3%B6.md)
 
+[Käyttö-ohjeet](https://github.com/Halmela/l-system-otm/blob/master/dokumentointi/kaytto-ohjeet.md)
+
 
